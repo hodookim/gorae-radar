@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+
+  /* ── Brand palette (preserved) ─────────────────────────── */
+  --accent: #25cdbd;   /* teal — brand */
+  --green:  #00d084;   /* long / positive */
+  --red:    #ff4d68;   /* short / negative */
+  --yellow: #f5b942;   /* warn */
+  --blue:   #60a5fa;   /* info */
+  --violet: #a78bfa;   /* insider-suspect label */
+  --cyan:   #22d3ee;   /* mascot accent */
+
+  /* ── Surface layers (page → raised) ────────────────────── */
+  --bg:         #070a0f;
+  --surface-0:  #0a1018;   /* page deep */
+  --surface-1:  #0d141d;   /* card base */
+  --surface-2:  #111a25;   /* elevated / nested */
+  --surface-3:  #16212f;   /* hover / active */
+
+  /* ── Borders ───────────────────────────────────────────── */
+  --border:        #1a2636;                 /* hairline */
+  --border-strong: #2f4359;                 /* visible */
+  --border-accent: rgba(25, 211, 197, .42);
+  --border-violet: rgba(167, 139, 250, .50);
+
+  /* ── Text hierarchy ────────────────────────────────────── */
+  --text:  #eef5ff;   /* primary */
+  --soft:  #bdc9d8;   /* secondary */
+  --muted: #8fa1b5;   /* tertiary / meta */
+  --faint: #6d8095;   /* ranks, placeholders */
+
+  /* ── Status tints (chip / badge backgrounds) ───────────── */
+  --t-green:  rgba(0, 208, 132, .12);
+  --t-red:    rgba(255, 77, 104, .12);
+  --t-yellow: rgba(245, 185, 66, .12);
+  --t-blue:   rgba(96, 165, 250, .12);
+  --t-violet: rgba(167, 139, 250, .14);
+
+  /* ── Radii ─────────────────────────────────────────────── */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   16px;
+  --r-pill: 999px;
+
+  /* ── Shadows & glows (elevation via shadow, not border) ── */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, .28);
+  --shadow:      0 10px 28px rgba(0, 0, 0, .22);
+  --shadow-lg:   0 18px 48px rgba(0, 0, 0, .34);
+  --glow-accent: inset 0 0 0 1px rgba(37, 205, 189, .12);
+  --glow-violet: inset 0 0 0 1px rgba(167, 139, 250, .14);
+
+  /* ── Spacing (8px grid) ────────────────────────────────── */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+
+  /* ── Type scale ────────────────────────────────────────── */
+  --fs-hero:   36px;   /* hero headline */
+  --fs-xl:     28px;   /* conviction hero number */
+  --fs-lg:     22px;   /* metric value, pick symbol */
+  --fs-h1:     21px;   /* topbar title */
+  --fs-title:  17px;   /* board title */
+  --fs-name:   16px;   /* whale name */
+  --fs-body:   14px;   /* body / summary */
+  --fs-meta:   12px;   /* pill / address / small */
+  --fs-micro:  11px;   /* sub-labels / ranks */
+
+  /* ── Weights (600 / 800 / 900 + 400 base) ──────────────── */
+  --w-regular: 400;
+  --w-medium:  600;
+  --w-bold:    700;
+  --w-black:   800;
+
+  /* ── Motion ────────────────────────────────────────────── */
+  --ease:    cubic-bezier(.2, .7, .25, 1);
+  --t-fast:  .12s;
+  --t:       .18s;
+
+  /* ── Fonts ─────────────────────────────────────────────── */
+  --mono: "Cascadia Mono", "JetBrains Mono", Consolas, monospace;
+  --ui:   "Segoe UI Variable Text", "Segoe UI", "Malgun Gothic", sans-serif;
+}

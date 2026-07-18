@@ -1,0 +1,192 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "/api/radar/top",
+      "dest": "/api/radar/top.js"
+    },
+    {
+      "src": "/api/stats/overview",
+      "dest": "/api/stats/overview.js"
+    },
+    {
+      "src": "/api/coins/flow",
+      "dest": "/api/coins/flow.js"
+    },
+    {
+      "src": "/api/wallet/detail",
+      "dest": "/api/wallet/detail.js"
+    },
+    {
+      "src": "/api/market/summary",
+      "dest": "/api/market/summary.js"
+    },
+    {
+      "src": "/api/market/fear-greed",
+      "dest": "/api/market/fear-greed.js"
+    },
+    {
+      "src": "/api/health",
+      "dest": "/api/health.py"
+    },
+    {
+      "src": "/live/?",
+      "dest": "/live/index.html"
+    },
+    {
+      "src": "/markets/BTC/?",
+      "dest": "/markets/BTC/index.html"
+    },
+    {
+      "src": "/about/?",
+      "dest": "/about/index.html"
+    },
+    {
+      "src": "/author/hodookim/?",
+      "dest": "/author/hodookim/index.html"
+    },
+    {
+      "src": "/methodology/?",
+      "dest": "/methodology/index.html"
+    },
+    {
+      "src": "/guides/whale-wallets/?",
+      "dest": "/guides/whale-wallets/index.html"
+    },
+    {
+      "src": "/guides/positions/?",
+      "dest": "/guides/positions/index.html"
+    },
+    {
+      "src": "/guides/scoring/?",
+      "dest": "/guides/scoring/index.html"
+    },
+    {
+      "src": "/guides/data-quality/?",
+      "dest": "/guides/data-quality/index.html"
+    },
+    {
+      "src": "/guides/concentration/?",
+      "dest": "/guides/concentration/index.html"
+    },
+    {
+      "src": "/guides/liquidation-risk/?",
+      "dest": "/guides/liquidation-risk/index.html"
+    },
+    {
+      "src": "/guides/leaderboard-bias/?",
+      "dest": "/guides/leaderboard-bias/index.html"
+    },
+    {
+      "src": "/reports/2026-07-11-market-snapshot/?",
+      "dest": "/reports/2026-07-11-market-snapshot/index.html"
+    },
+    {
+      "src": "/reports/?",
+      "dest": "/reports/index.html"
+    },
+    {
+      "src": "/reports/([^/]+)/?",
+      "dest": "/reports/$1/index.html"
+    },
+    {
+      "src": "/editorial-policy/?",
+      "dest": "/editorial-policy/index.html"
+    },
+    {
+      "src": "/privacy/?",
+      "dest": "/privacy/index.html"
+    },
+    {
+      "src": "/terms/?",
+      "dest": "/terms/index.html"
+    },
+    {
+      "src": "/disclaimer/?",
+      "dest": "/disclaimer/index.html"
+    },
+    {
+      "src": "/contact/?",
+      "dest": "/contact/index.html"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/data/(.*)",
+      "dest": "/data/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/static/favicon.svg"
+    },
+    {
+      "src": "/ads.txt",
+      "dest": "/ads.txt"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/rss.xml",
+      "dest": "/rss.xml"
+    },
+    {
+      "src": "/naver0e7986cc8358bf3048efb564b27a8c87.html",
+      "dest": "/naver0e7986cc8358bf3048efb564b27a8c87.html"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404,
+      "headers": {
+        "X-Robots-Tag": "noindex"
+      }
+    }
+  ],
+  "headers": [
+    {
+      "source": "/static/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/static/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

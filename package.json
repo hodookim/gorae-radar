@@ -1,0 +1,14 @@
+{
+  "name": "gorae-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static-site.mjs",
+    "build:vercel-live": "npm run build && node scripts/build-vercel-live-site.mjs",
+    "capture:snapshot": "node scripts/capture-snapshot.mjs",
+    "import:legacy-snapshot": "py scripts/export_legacy_snapshot.py --published-at 2026-07-18",
+    "audit:adsense": "npm run build && node scripts/audit-static-site.mjs",
+    "test:js": "node --test tests/*.test.mjs"
+  }
+}

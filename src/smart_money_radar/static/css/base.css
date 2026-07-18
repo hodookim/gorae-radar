@@ -1,0 +1,102 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 12% -10%, rgba(25, 211, 197, .15), transparent 30%),
+    radial-gradient(circle at 92% 0%, rgba(96, 165, 250, .10), transparent 26%),
+    linear-gradient(180deg, #08101a 0%, var(--bg) 46%, #05070b 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--ui);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Form elements ───────────────────────────────────────── */
+button, input, select {
+  font: inherit;
+  color: var(--text);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-0);
+  outline: none;
+}
+button {
+  cursor: pointer;
+  min-height: 40px;
+  padding: 0 var(--s-4);
+  font-size: var(--fs-body);
+  font-weight: var(--w-medium);
+  transition: transform var(--t-fast) var(--ease),
+              border-color var(--t-fast) var(--ease),
+              background var(--t-fast) var(--ease),
+              box-shadow var(--t-fast) var(--ease);
+}
+button:hover { border-color: var(--accent); background: var(--surface-2); }
+button:active { transform: translateY(1px); }
+button:disabled { cursor: wait; opacity: .5; }
+
+input, select {
+  min-height: 40px;
+  padding: 0 var(--s-3);
+}
+select {
+  min-width: 132px;
+  cursor: pointer;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+                    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 16px) center, calc(100% - 11px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 28px;
+}
+
+/* keyboard focus ring */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(25, 211, 197, .22);
+}
+
+/* ── Scrollbar (dark terminal) ───────────────────────────── */
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--r-pill);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: #3d556d; background-clip: padding-box; }
+
+/* ── Utility classes ─────────────────────────────────────── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 26px;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border-strong);
+  background: rgba(13, 22, 34, .8);
+  color: var(--soft);
+  font-size: var(--fs-meta);
+  font-weight: var(--w-medium);
+  white-space: nowrap;
+}
+.pill.good, .good { color: var(--green); }
+.pill.bad,  .bad  { color: var(--red); }
+.pill.warn, .warn { color: var(--yellow); }
+.pill.info, .info { color: var(--blue); }
+
+.small { color: var(--muted); font-size: var(--fs-meta); }
+.mono  { font-family: var(--mono); }
