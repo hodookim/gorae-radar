@@ -1,0 +1,5564 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-09-20T04:49:52.876Z",
+  "captured_at_ms": 1789879792876,
+  "data_source": {
+    "name": "Hyperliquid public leaderboard and Info API",
+    "provider": "Hyperliquid",
+    "leaderboard_url": "https://stats-data.hyperliquid.xyz/Mainnet/leaderboard",
+    "info_api_url": "https://api.hyperliquid.xyz/info",
+    "radar_source": "vercel_lightweight_hyperliquid"
+  },
+  "capture_parameters": {
+    "top": 12,
+    "pool": 36,
+    "scan_limit": 24,
+    "min_score": 45,
+    "lookback_hours": 6
+  },
+  "observation": {
+    "scanned_candidates": 24,
+    "position_wallets": 12,
+    "candidate_cache_refreshed": true,
+    "cached": false,
+    "stale": false
+  },
+  "wallets": [
+    {
+      "rank": 1,
+      "candidate": {
+        "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "label": "0x856c3503",
+        "short_address": "0x856c35...0e910d",
+        "score": 80,
+        "account_value": 80596324.647039,
+        "day_pnl": 1404831.436551,
+        "week_pnl": 1658036.902993,
+        "month_pnl": 3894219.404114,
+        "month_roi": 0.0488490124,
+        "insider_suspicion_score": 50,
+        "insider_reasons": [
+          "월간 수익 $3.9M",
+          "주간 수익 $1.7M",
+          "단일 종목 비중 73%",
+          "최대 레버리지 20x",
+          "숏 방향 비중 93%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $3.9M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.7M"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 9,
+            "evidence": "단일 종목 비중 73%"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 8,
+            "evidence": "최대 레버리지 20x"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 93%"
+          }
+        ],
+        "radar_label": "심상치 않은 고래 · #1",
+        "radar_tags": [
+          "의심 점수 50",
+          "월간 수익 $3.9M",
+          "주간 수익 $1.7M",
+          "단일 종목 비중 73%",
+          "최대 레버리지 20x",
+          "숏 방향 비중 93%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 50/100. 월간 수익 $3.9M, 주간 수익 $1.7M, 단일 종목 비중 73%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x856c3503",
+          "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+          "short_address": "0x856c35...0e910d",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "BTC",
+            "side": "SHORT",
+            "size": -4.68399,
+            "entry_price": 62946.4,
+            "current_price": 80392,
+            "position_value": 376555.32408,
+            "unrealized_pnl": -81715.01091,
+            "roe_pct": -554.30012288,
+            "liquidation_price": 830940.5342448492,
+            "margin_used": 18827.766204,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "ETH",
+            "side": "SHORT",
+            "size": -28.3584,
+            "entry_price": 1676.34,
+            "current_price": 2577.7999999999997,
+            "position_value": 73102.28352,
+            "unrealized_pnl": -25563.82375,
+            "roe_pct": -1075.50071558,
+            "liquidation_price": 125635.2401089928,
+            "margin_used": 3655.114176,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "SOL",
+            "side": "LONG",
+            "size": 827.66,
+            "entry_price": 80.9431,
+            "current_price": 108.87000000000002,
+            "position_value": 90107.3442,
+            "unrealized_pnl": 23113.94871,
+            "roe_pct": 690.03663842,
+            "liquidation_price": null,
+            "margin_used": 4505.36721,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "BNB",
+            "side": "SHORT",
+            "size": -295.806,
+            "entry_price": 579.952,
+            "current_price": 747.5600000000001,
+            "position_value": 221132.73336,
+            "unrealized_pnl": -49579.2855,
+            "roe_pct": -144.50098823,
+            "liquidation_price": 12113.8845969902,
+            "margin_used": 44226.546672,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "DOGE",
+            "side": "SHORT",
+            "size": -85,
+            "entry_price": 0.090679,
+            "current_price": 0.08536300000000001,
+            "position_value": 7.255855,
+            "unrealized_pnl": 0.45186,
+            "roe_pct": 58.624378300000004,
+            "liquidation_price": 39882.5094725602,
+            "margin_used": 0.725585,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "SUI",
+            "side": "LONG",
+            "size": 65467.6,
+            "entry_price": 1.05139,
+            "current_price": 0.8237599999999999,
+            "position_value": 53929.590176,
+            "unrealized_pnl": -14902.964404,
+            "roe_pct": -216.51040695999998,
+            "liquidation_price": null,
+            "margin_used": 5392.959017,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "XRP",
+            "side": "SHORT",
+            "size": -298,
+            "entry_price": 1.081744,
+            "current_price": 1.3783,
+            "position_value": 410.7334,
+            "unrealized_pnl": -88.37341,
+            "roe_pct": -274.14509474,
+            "liquidation_price": 11654.6975070028,
+            "margin_used": 41.07334,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "APT",
+            "side": "SHORT",
+            "size": -377.57,
+            "entry_price": 5.6917,
+            "current_price": 0.7233,
+            "position_value": 273.096381,
+            "unrealized_pnl": 1875.931743,
+            "roe_pct": 872.92098323,
+            "liquidation_price": 8979.2068906277,
+            "margin_used": 27.309638,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "UNI",
+            "side": "SHORT",
+            "size": -453.1,
+            "entry_price": 7.52536,
+            "current_price": 8.8054,
+            "position_value": 3989.72674,
+            "unrealized_pnl": -579.983058,
+            "roe_pct": -170.09579373,
+            "liquidation_price": 7490.6108498198,
+            "margin_used": 398.972674,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "TAO",
+            "side": "LONG",
+            "size": 147.359,
+            "entry_price": 244.396,
+            "current_price": 252.59999999999997,
+            "position_value": 37222.8834,
+            "unrealized_pnl": 1208.798,
+            "roe_pct": 16.78229485,
+            "liquidation_price": null,
+            "margin_used": 7444.57668,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "ENA",
+            "side": "SHORT",
+            "size": -4811,
+            "entry_price": 0.20873,
+            "current_price": 0.19680999999999998,
+            "position_value": 946.85291,
+            "unrealized_pnl": 57.35169,
+            "roe_pct": 57.11155874,
+            "liquidation_price": 704.8332783668,
+            "margin_used": 94.685291,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "POPCAT",
+            "side": "SHORT",
+            "size": -27,
+            "entry_price": 0.481605,
+            "current_price": 0.048841,
+            "position_value": 1.318707,
+            "unrealized_pnl": 11.684649,
+            "roe_pct": 269.57615403,
+            "liquidation_price": 125555.8284451852,
+            "margin_used": 0.439569,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -423.23,
+            "entry_price": 82.4584,
+            "current_price": 90.886,
+            "position_value": 38465.68178,
+            "unrealized_pnl": -3566.795121,
+            "roe_pct": -30.6611081,
+            "liquidation_price": 8100.7294641054,
+            "margin_used": 12821.893926,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "MOVE",
+            "side": "SHORT",
+            "size": -4525,
+            "entry_price": 0.071702,
+            "current_price": 0.008924000000000001,
+            "position_value": 40.3811,
+            "unrealized_pnl": 284.07338,
+            "roe_pct": 262.66246655000003,
+            "liquidation_price": 715.1282312384,
+            "margin_used": 13.460366,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "USUAL",
+            "side": "SHORT",
+            "size": -72.6,
+            "entry_price": 0.25009,
+            "current_price": 0.01301,
+            "position_value": 0.944526,
+            "unrealized_pnl": 17.212008,
+            "roe_pct": 284.39361829999996,
+            "liquidation_price": 44571.8431099048,
+            "margin_used": 0.314842,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "FARTCOIN",
+            "side": "LONG",
+            "size": 8875.1,
+            "entry_price": 0.13691,
+            "current_price": 0.16038,
+            "position_value": 1423.388538,
+            "unrealized_pnl": 208.291787,
+            "roe_pct": 85.70995965,
+            "liquidation_price": null,
+            "margin_used": 284.677707,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "SPX",
+            "side": "SHORT",
+            "size": -212,
+            "entry_price": 1.05809,
+            "current_price": 0.46315,
+            "position_value": 98.1878,
+            "unrealized_pnl": 126.12837,
+            "roe_pct": 281.139719,
+            "liquidation_price": 15264.2125144039,
+            "margin_used": 19.63756,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "TRUMP",
+            "side": "SHORT",
+            "size": -266.9,
+            "entry_price": 6.12499,
+            "current_price": 2.0254,
+            "position_value": 540.57926,
+            "unrealized_pnl": 1094.180635,
+            "roe_pct": 200.79657661,
+            "liquidation_price": 12703.4343520919,
+            "margin_used": 180.193086,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "MELANIA",
+            "side": "SHORT",
+            "size": -5451.5,
+            "entry_price": 0.47508,
+            "current_price": 0.10204999999999999,
+            "position_value": 556.325575,
+            "unrealized_pnl": 2033.609075,
+            "roe_pct": 235.55911826,
+            "liquidation_price": 593.6845255119,
+            "margin_used": 185.441858,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "BERA",
+            "side": "LONG",
+            "size": 2072.5,
+            "entry_price": 2.63242,
+            "current_price": 0.21027,
+            "position_value": 435.784575,
+            "unrealized_pnl": -5019.907125,
+            "roe_pct": -460.06147351,
+            "liquidation_price": null,
+            "margin_used": 87.156915,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "LAYER",
+            "side": "SHORT",
+            "size": -906,
+            "entry_price": 0.196106,
+            "current_price": 0.07179500000000001,
+            "position_value": 65.04627,
+            "unrealized_pnl": 112.6264,
+            "roe_pct": 190.16948413999998,
+            "liquidation_price": 3367.6274731258,
+            "margin_used": 21.68209,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "PAXG",
+            "side": "LONG",
+            "size": 0.439,
+            "entry_price": 4071.524,
+            "current_price": 4361.5,
+            "position_value": 1914.6985,
+            "unrealized_pnl": 127.2993,
+            "roe_pct": 35.61020392,
+            "liquidation_price": null,
+            "margin_used": 382.9397,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "PUMP",
+            "side": "LONG",
+            "size": 1355871,
+            "entry_price": 0.002458,
+            "current_price": 0.003982,
+            "position_value": 5399.078322,
+            "unrealized_pnl": 2066.163251,
+            "roe_pct": 309.96338145000004,
+            "liquidation_price": null,
+            "margin_used": 1079.815664,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "XPL",
+            "side": "SHORT",
+            "size": -32138939,
+            "entry_price": 0.093251,
+            "current_price": 0.09096699999999999,
+            "position_value": 2923582.864013,
+            "unrealized_pnl": 73414.080608,
+            "roe_pct": 12.24794052,
+            "liquidation_price": 0.191760258,
+            "margin_used": 584716.572802,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "WLFI",
+            "side": "SHORT",
+            "size": -830,
+            "entry_price": 0.202418,
+            "current_price": 0.057954,
+            "position_value": 48.10182,
+            "unrealized_pnl": 119.905469,
+            "roe_pct": 356.84603244000004,
+            "liquidation_price": 3898.7505627393,
+            "margin_used": 9.620364,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "ASTER",
+            "side": "SHORT",
+            "size": -57432,
+            "entry_price": 0.687241,
+            "current_price": 0.7413339999999999,
+            "position_value": 42576.294288,
+            "unrealized_pnl": -3106.649149,
+            "roe_pct": -23.61294968,
+            "liquidation_price": 57.0847464748,
+            "margin_used": 14192.098096,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "ZEC",
+            "side": "LONG",
+            "size": 23.05,
+            "entry_price": 509.8619,
+            "current_price": 1452.3999999999999,
+            "position_value": 33477.82,
+            "unrealized_pnl": 21725.501977,
+            "roe_pct": 924.30709986,
+            "liquidation_price": null,
+            "margin_used": 6695.564,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x856c3503",
+            "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+            "coin": "LIT",
+            "side": "LONG",
+            "size": 15949,
+            "entry_price": 4.276217,
+            "current_price": 4.6455,
+            "position_value": 74091.0795,
+            "unrealized_pnl": 5889.682484,
+            "roe_pct": 25.90716353,
+            "liquidation_price": null,
+            "margin_used": 24697.0265,
+            "leverage": 3
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 2,
+      "candidate": {
+        "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "label": "0x469e9a7f",
+        "short_address": "0x469e9a...bf58a5",
+        "score": 80,
+        "account_value": 23336948.815919,
+        "day_pnl": 474024.030449,
+        "week_pnl": 4542690.616017,
+        "month_pnl": 10012737.548195,
+        "month_roi": 0.6489289077,
+        "insider_suspicion_score": 70,
+        "insider_reasons": [
+          "월간 수익 $10.0M",
+          "주간 수익 $4.5M",
+          "월간 ROI +64.9%",
+          "총 포지션 $86.1M",
+          "최대 레버리지 25x"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 18,
+            "evidence": "월간 수익 $10.0M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 12,
+            "evidence": "주간 수익 $4.5M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 10,
+            "evidence": "월간 ROI +64.9%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 16,
+            "evidence": "총 포지션 $86.1M"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 14,
+            "evidence": "최대 레버리지 25x"
+          }
+        ],
+        "radar_label": "내부자 의심 후보 · #2",
+        "radar_tags": [
+          "의심 점수 70",
+          "월간 수익 $10.0M",
+          "주간 수익 $4.5M",
+          "월간 ROI +64.9%",
+          "총 포지션 $86.1M",
+          "최대 레버리지 25x"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 70/100. 월간 수익 $10.0M, 주간 수익 $4.5M, 월간 ROI +64.9%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x469e9a7f",
+          "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+          "short_address": "0x469e9a...bf58a5",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "BTC",
+            "side": "LONG",
+            "size": 500,
+            "entry_price": 81455.2,
+            "current_price": 80392,
+            "position_value": 40196000,
+            "unrealized_pnl": -531634.56254,
+            "roe_pct": -32.633528090000006,
+            "liquidation_price": 62350.8712238319,
+            "margin_used": 1607840,
+            "leverage": 25
+          },
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "ETH",
+            "side": "LONG",
+            "size": 5000,
+            "entry_price": 2622.99,
+            "current_price": 2577.8,
+            "position_value": 12889000,
+            "unrealized_pnl": -225984.36295,
+            "roe_pct": -43.07751285,
+            "liquidation_price": 759.8801360749,
+            "margin_used": 515560,
+            "leverage": 25
+          },
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "SOL",
+            "side": "SHORT",
+            "size": -100000,
+            "entry_price": 111.2094,
+            "current_price": 108.87,
+            "position_value": 10887000,
+            "unrealized_pnl": 233949.6885,
+            "roe_pct": 42.073688860000004,
+            "liquidation_price": 195.7754373974,
+            "margin_used": 544350,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "XRP",
+            "side": "SHORT",
+            "size": -5000000,
+            "entry_price": 1.427675,
+            "current_price": 1.3783,
+            "position_value": 6891500,
+            "unrealized_pnl": 246877.0847,
+            "roe_pct": 69.16896706,
+            "liquidation_price": 3.1164087479,
+            "margin_used": 344575,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -120000.04,
+            "entry_price": 79.884,
+            "current_price": 90.886,
+            "position_value": 10906323.63544,
+            "unrealized_pnl": -1320236.786038,
+            "roe_pct": -137.72426714,
+            "liquidation_price": 161.5828600315,
+            "margin_used": 1090632.363544,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x469e9a7f",
+            "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+            "coin": "ZEC",
+            "side": "SHORT",
+            "size": -2972.96,
+            "entry_price": 1503.5854,
+            "current_price": 1452.4,
+            "position_value": 4317927.104,
+            "unrealized_pnl": 152172.158,
+            "roe_pct": 34.042232420000005,
+            "liquidation_price": 4305.9957536094,
+            "margin_used": 431792.7104,
+            "leverage": 10
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 3,
+      "candidate": {
+        "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "label": "0x091159a8",
+        "short_address": "0x091159...5f129a",
+        "score": 80,
+        "account_value": 2917340.750361,
+        "day_pnl": 274897.784459,
+        "week_pnl": 1132172.390961,
+        "month_pnl": 4148775.120469,
+        "month_roi": 0.3497086189,
+        "insider_suspicion_score": 35,
+        "insider_reasons": [
+          "월간 수익 $4.1M",
+          "주간 수익 $1.1M",
+          "월간 ROI +35.0%",
+          "최대 레버리지 20x"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $4.1M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.1M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 7,
+            "evidence": "월간 ROI +35.0%"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 8,
+            "evidence": "최대 레버리지 20x"
+          }
+        ],
+        "radar_label": "포지션 수집가 · #3",
+        "radar_tags": [
+          "의심 점수 35",
+          "월간 수익 $4.1M",
+          "주간 수익 $1.1M",
+          "월간 ROI +35.0%",
+          "최대 레버리지 20x"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 35/100. 월간 수익 $4.1M, 주간 수익 $1.1M, 월간 ROI +35.0%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x091159a8",
+          "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+          "short_address": "0x091159...5f129a",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "ETH",
+            "side": "LONG",
+            "size": 0.065,
+            "entry_price": 2499.96,
+            "current_price": 2577.7999999999997,
+            "position_value": 167.557,
+            "unrealized_pnl": 5.058965,
+            "roe_pct": 62.26493754,
+            "liquidation_price": null,
+            "margin_used": 8.37785,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "SOL",
+            "side": "LONG",
+            "size": 18.17,
+            "entry_price": 74.2241,
+            "current_price": 108.86999999999999,
+            "position_value": 1978.1679,
+            "unrealized_pnl": 629.514882,
+            "roe_pct": 933.5460991,
+            "liquidation_price": null,
+            "margin_used": 98.908395,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "TIA",
+            "side": "LONG",
+            "size": 1340,
+            "entry_price": 0.37321,
+            "current_price": 0.42272,
+            "position_value": 566.4448,
+            "unrealized_pnl": 66.332358,
+            "roe_pct": 66.31744427000001,
+            "liquidation_price": null,
+            "margin_used": 113.28896,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "NEAR",
+            "side": "LONG",
+            "size": 396.1,
+            "entry_price": 1.92341,
+            "current_price": 3.4811999999999994,
+            "position_value": 1378.90332,
+            "unrealized_pnl": 617.037977,
+            "roe_pct": 809.90424708,
+            "liquidation_price": null,
+            "margin_used": 137.890332,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "JUP",
+            "side": "LONG",
+            "size": 1144,
+            "entry_price": 0.256268,
+            "current_price": 0.27102,
+            "position_value": 310.04688,
+            "unrealized_pnl": 16.875232,
+            "roe_pct": 57.56092758,
+            "liquidation_price": null,
+            "margin_used": 31.004688,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "TAO",
+            "side": "LONG",
+            "size": 1.345,
+            "entry_price": 236.503,
+            "current_price": 252.60000000000002,
+            "position_value": 339.747,
+            "unrealized_pnl": 21.649954,
+            "roe_pct": 34.030422900000005,
+            "liquidation_price": null,
+            "margin_used": 67.9494,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "ENA",
+            "side": "LONG",
+            "size": 2663,
+            "entry_price": 0.155929,
+            "current_price": 0.19681,
+            "position_value": 524.10503,
+            "unrealized_pnl": 108.863513,
+            "roe_pct": 262.16914384,
+            "liquidation_price": null,
+            "margin_used": 52.410503,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "SAGA",
+            "side": "LONG",
+            "size": 19905.9,
+            "entry_price": 0.01482,
+            "current_price": 0.02754,
+            "position_value": 548.208486,
+            "unrealized_pnl": 253.07746,
+            "roe_pct": 257.25264818,
+            "liquidation_price": null,
+            "margin_used": 182.736162,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "PURR",
+            "side": "LONG",
+            "size": 18759,
+            "entry_price": 0.117483,
+            "current_price": 0.11878999999999999,
+            "position_value": 2228.38161,
+            "unrealized_pnl": 24.513652,
+            "roe_pct": 3.3369039099999998,
+            "liquidation_price": null,
+            "margin_used": 742.79387,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "ZORA",
+            "side": "LONG",
+            "size": 93024,
+            "entry_price": 0.006849,
+            "current_price": 0.008047,
+            "position_value": 748.564128,
+            "unrealized_pnl": 111.417045,
+            "roe_pct": 52.46059253000001,
+            "liquidation_price": null,
+            "margin_used": 249.521376,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "HEMI",
+            "side": "LONG",
+            "size": 99525,
+            "entry_price": 0.006754,
+            "current_price": 0.0066619999999999995,
+            "position_value": 663.03555,
+            "unrealized_pnl": -9.21327,
+            "roe_pct": -4.11154459,
+            "liquidation_price": null,
+            "margin_used": 221.01185,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "ZEC",
+            "side": "LONG",
+            "size": 2.9,
+            "entry_price": 318.7971,
+            "current_price": 1452.4,
+            "position_value": 4211.96,
+            "unrealized_pnl": 3287.448133,
+            "roe_pct": 3555.8744569399996,
+            "liquidation_price": null,
+            "margin_used": 421.196,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "MON",
+            "side": "LONG",
+            "size": 42248,
+            "entry_price": 0.022665,
+            "current_price": 0.023959,
+            "position_value": 1012.219832,
+            "unrealized_pnl": 54.653976,
+            "roe_pct": 28.537972430000003,
+            "liquidation_price": null,
+            "margin_used": 202.443966,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "MEGA",
+            "side": "LONG",
+            "size": 13790,
+            "entry_price": 0.040836,
+            "current_price": 0.043102999999999995,
+            "position_value": 594.39037,
+            "unrealized_pnl": 31.252296,
+            "roe_pct": 16.649005340000002,
+            "liquidation_price": null,
+            "margin_used": 198.130123,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "STABLE",
+            "side": "SHORT",
+            "size": -218484,
+            "entry_price": 0.036001,
+            "current_price": 0.023603,
+            "position_value": 5156.877852,
+            "unrealized_pnl": 2708.863502,
+            "roe_pct": 103.31626913000001,
+            "liquidation_price": 7.7530461358,
+            "margin_used": 1718.959284,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "CHIP",
+            "side": "LONG",
+            "size": 9625,
+            "entry_price": 0.037347,
+            "current_price": 0.041936,
+            "position_value": 403.634,
+            "unrealized_pnl": 44.166939,
+            "roe_pct": 36.86035005,
+            "liquidation_price": null,
+            "margin_used": 134.544666,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "GRAM",
+            "side": "LONG",
+            "size": 455,
+            "entry_price": 1.357946,
+            "current_price": 1.3722999999999999,
+            "position_value": 624.3965,
+            "unrealized_pnl": 6.530629,
+            "roe_pct": 5.28482742,
+            "liquidation_price": null,
+            "margin_used": 124.8793,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "PONS",
+            "side": "SHORT",
+            "size": -750,
+            "entry_price": 0.766531,
+            "current_price": 0.59704,
+            "position_value": 447.78,
+            "unrealized_pnl": 127.11834,
+            "roe_pct": 66.33434009,
+            "liquidation_price": 2252.2765787669,
+            "margin_used": 149.26,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x091159a8",
+            "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+            "coin": "USELESS",
+            "side": "SHORT",
+            "size": -9601,
+            "entry_price": 0.306658,
+            "current_price": 0.25327,
+            "position_value": 2431.64527,
+            "unrealized_pnl": 512.581065,
+            "roe_pct": 52.22910945,
+            "liquidation_price": 176.1474116597,
+            "margin_used": 810.548423,
+            "leverage": 3
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 4,
+      "candidate": {
+        "address": "0x519c721de735f7c9e6146d167852e60d60496a47",
+        "label": "0x519c721d",
+        "short_address": "0x519c72...496a47",
+        "score": 80,
+        "account_value": 23686961.020715002,
+        "day_pnl": 109925.694659,
+        "week_pnl": 1410626.236474,
+        "month_pnl": 3143296.648998,
+        "month_roi": 0.1530049017,
+        "insider_suspicion_score": 70,
+        "insider_reasons": [
+          "월간 수익 $3.1M",
+          "주간 수익 $1.4M",
+          "월간 ROI +15.3%",
+          "총 포지션 $24.1M",
+          "단일 종목 비중 100%",
+          "최대 레버리지 20x",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $3.1M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.4M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 4,
+            "evidence": "월간 ROI +15.3%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 10,
+            "evidence": "총 포지션 $24.1M"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 15,
+            "evidence": "단일 종목 비중 100%"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 8,
+            "evidence": "최대 레버리지 20x"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "내부자 의심 후보 · #4",
+        "radar_tags": [
+          "의심 점수 70",
+          "월간 수익 $3.1M",
+          "주간 수익 $1.4M",
+          "월간 ROI +15.3%",
+          "총 포지션 $24.1M",
+          "단일 종목 비중 100%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 70/100. 월간 수익 $3.1M, 주간 수익 $1.4M, 월간 ROI +15.3%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x519c721d",
+          "address": "0x519c721de735f7c9e6146d167852e60d60496a47",
+          "short_address": "0x519c72...496a47",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x519c721d",
+            "address": "0x519c721de735f7c9e6146d167852e60d60496a47",
+            "coin": "BTC",
+            "side": "SHORT",
+            "size": -300,
+            "entry_price": 79675,
+            "current_price": 80392,
+            "position_value": 24117600,
+            "unrealized_pnl": -215100,
+            "roe_pct": -17.99811735,
+            "liquidation_price": 152712.4017638321,
+            "margin_used": 1205880,
+            "leverage": 20
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 5,
+      "candidate": {
+        "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+        "label": "0xa61c57d0",
+        "short_address": "0xa61c57...dd66b9",
+        "score": 80,
+        "account_value": 6154682.735005,
+        "day_pnl": 1103087.447276,
+        "week_pnl": 950680.229239,
+        "month_pnl": 2647111.556715,
+        "month_roi": 0.7546850576,
+        "insider_suspicion_score": 63,
+        "insider_reasons": [
+          "월간 수익 $2.6M",
+          "주간 수익 $951K",
+          "월간 ROI +75.5%",
+          "총 포지션 $34.1M",
+          "단일 종목 비중 66%",
+          "최대 레버리지 20x",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 8,
+            "evidence": "월간 수익 $2.6M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 5,
+            "evidence": "주간 수익 $951K"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 10,
+            "evidence": "월간 ROI +75.5%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 10,
+            "evidence": "총 포지션 $34.1M"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 9,
+            "evidence": "단일 종목 비중 66%"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 8,
+            "evidence": "최대 레버리지 20x"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "심상치 않은 고래 · #5",
+        "radar_tags": [
+          "의심 점수 63",
+          "월간 수익 $2.6M",
+          "주간 수익 $951K",
+          "월간 ROI +75.5%",
+          "총 포지션 $34.1M",
+          "단일 종목 비중 66%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 63/100. 월간 수익 $2.6M, 주간 수익 $951K, 월간 ROI +75.5%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0xa61c57d0",
+          "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+          "short_address": "0xa61c57...dd66b9",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0xa61c57d0",
+            "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+            "coin": "ETH",
+            "side": "SHORT",
+            "size": -8761.8472,
+            "entry_price": 2529.65,
+            "current_price": 2577.7,
+            "position_value": 22585413.52744,
+            "unrealized_pnl": -420947.89415,
+            "roe_pct": -37.98403274,
+            "liquidation_price": 3152.8376727108,
+            "margin_used": 1129270.676372,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0xa61c57d0",
+            "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+            "coin": "SOL",
+            "side": "SHORT",
+            "size": -510,
+            "entry_price": 101.515,
+            "current_price": 108.86999999999999,
+            "position_value": 55523.7,
+            "unrealized_pnl": -3751,
+            "roe_pct": -144.90262242,
+            "liquidation_price": 9941.588843428,
+            "margin_used": 2776.185,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0xa61c57d0",
+            "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+            "coin": "ZEC",
+            "side": "SHORT",
+            "size": -7902.25,
+            "entry_price": 1368.9671,
+            "current_price": 1452.5,
+            "position_value": 11478018.125,
+            "unrealized_pnl": -660097.442,
+            "roe_pct": -61.01888351,
+            "liquidation_price": 2071.9804403691,
+            "margin_used": 1147801.8125,
+            "leverage": 10
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 7,
+      "candidate": {
+        "address": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+        "label": "0x4c6d679e",
+        "short_address": "0x4c6d67...1e5ee9",
+        "score": 80,
+        "account_value": 30368797.18931,
+        "day_pnl": 252661.384034,
+        "week_pnl": 701152.272123,
+        "month_pnl": 7518375.033009,
+        "month_roi": 0.2905634941,
+        "insider_suspicion_score": 52,
+        "insider_reasons": [
+          "월간 수익 $7.5M",
+          "주간 수익 $701K",
+          "월간 ROI +29.1%",
+          "단일 종목 비중 100%",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $7.5M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 5,
+            "evidence": "주간 수익 $701K"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 7,
+            "evidence": "월간 ROI +29.1%"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 15,
+            "evidence": "단일 종목 비중 100%"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "심상치 않은 고래 · #7",
+        "radar_tags": [
+          "의심 점수 52",
+          "월간 수익 $7.5M",
+          "주간 수익 $701K",
+          "월간 ROI +29.1%",
+          "단일 종목 비중 100%",
+          "숏 방향 비중 100%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 52/100. 월간 수익 $7.5M, 주간 수익 $701K, 월간 ROI +29.1%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x4c6d679e",
+          "address": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+          "short_address": "0x4c6d67...1e5ee9",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x4c6d679e",
+            "address": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+            "coin": "XMR",
+            "side": "SHORT",
+            "size": -6376.348,
+            "entry_price": 514.806,
+            "current_price": 525.1,
+            "position_value": 3348220.3348,
+            "unrealized_pnl": -65633.73954,
+            "roe_pct": -5.99835565,
+            "liquidation_price": 720.5242931695,
+            "margin_used": 1116073.444933,
+            "leverage": 3
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 8,
+      "candidate": {
+        "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "label": "0xaf0fdd39",
+        "short_address": "0xaf0fdd...c1e92e",
+        "score": 80,
+        "account_value": 18836931.317119997,
+        "day_pnl": 144096.278603,
+        "week_pnl": 2225350.0513029997,
+        "month_pnl": 3188686.7930280003,
+        "month_roi": 0.1977227063,
+        "insider_suspicion_score": 44,
+        "insider_reasons": [
+          "월간 수익 $3.2M",
+          "주간 수익 $2.2M",
+          "월간 ROI +19.8%",
+          "총 포지션 $5.6M",
+          "최대 레버리지 20x",
+          "숏 방향 비중 90%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $3.2M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $2.2M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 4,
+            "evidence": "월간 ROI +19.8%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 5,
+            "evidence": "총 포지션 $5.6M"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 8,
+            "evidence": "최대 레버리지 20x"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 7,
+            "evidence": "숏 방향 비중 90%"
+          }
+        ],
+        "radar_label": "물린 고래 · #8",
+        "radar_tags": [
+          "의심 점수 44",
+          "월간 수익 $3.2M",
+          "주간 수익 $2.2M",
+          "월간 ROI +19.8%",
+          "총 포지션 $5.6M",
+          "최대 레버리지 20x"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 44/100. 월간 수익 $3.2M, 주간 수익 $2.2M, 월간 ROI +19.8%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0xaf0fdd39",
+          "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+          "short_address": "0xaf0fdd...c1e92e",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0xaf0fdd39",
+            "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+            "coin": "SOL",
+            "side": "SHORT",
+            "size": -30000.1,
+            "entry_price": 107.3897,
+            "current_price": 108.87,
+            "position_value": 3266110.887,
+            "unrealized_pnl": -44407.97167,
+            "roe_pct": -27.5680116,
+            "liquidation_price": 292.1841729733,
+            "margin_used": 163305.54435,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0xaf0fdd39",
+            "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+            "coin": "UNI",
+            "side": "SHORT",
+            "size": -94918.1,
+            "entry_price": 5.07834,
+            "current_price": 8.8058,
+            "position_value": 835829.80498,
+            "unrealized_pnl": -353803.09451,
+            "roe_pct": -733.99064165,
+            "liquidation_price": 65.3651326159,
+            "margin_used": 83582.980498,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0xaf0fdd39",
+            "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+            "coin": "HYPE",
+            "side": "LONG",
+            "size": 1340.19,
+            "entry_price": 86.5228,
+            "current_price": 90.88399999999999,
+            "position_value": 121801.82796,
+            "unrealized_pnl": 5844.751334,
+            "roe_pct": 25.20221924,
+            "liquidation_price": null,
+            "margin_used": 24360.365592,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0xaf0fdd39",
+            "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+            "coin": "XPL",
+            "side": "LONG",
+            "size": 5000000,
+            "entry_price": 0.090048,
+            "current_price": 0.090971,
+            "position_value": 454855,
+            "unrealized_pnl": 4611.28677,
+            "roe_pct": 10.24175715,
+            "liquidation_price": null,
+            "margin_used": 45485.5,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0xaf0fdd39",
+            "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+            "coin": "AERO",
+            "side": "SHORT",
+            "size": -1393869,
+            "entry_price": 0.653329,
+            "current_price": 0.6435850000000001,
+            "position_value": 897073.180365,
+            "unrealized_pnl": 13582.994038,
+            "roe_pct": 4.47468356,
+            "liquidation_price": 4.1099465808,
+            "margin_used": 299024.393455,
+            "leverage": 3
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 9,
+      "candidate": {
+        "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "label": "0x8af700ba",
+        "short_address": "0x8af700...1efa05",
+        "score": 80,
+        "account_value": 35196739.5481,
+        "day_pnl": 339107.131386,
+        "week_pnl": 1823743.112585,
+        "month_pnl": 6220518.283281,
+        "month_roi": 0.2099197861,
+        "insider_suspicion_score": 63,
+        "insider_reasons": [
+          "월간 수익 $6.2M",
+          "주간 수익 $1.8M",
+          "월간 ROI +21.0%",
+          "총 포지션 $15.7M",
+          "최대 레버리지 40x",
+          "숏 방향 비중 76%",
+          "현재 미실현 수익 $3.6M"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 12,
+            "evidence": "월간 수익 $6.2M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.8M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 7,
+            "evidence": "월간 ROI +21.0%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 5,
+            "evidence": "총 포지션 $15.7M"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 14,
+            "evidence": "최대 레버리지 40x"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 7,
+            "evidence": "숏 방향 비중 76%"
+          },
+          {
+            "code": "OPEN_POSITION_PROFIT",
+            "points": 10,
+            "evidence": "현재 미실현 수익 $3.6M"
+          }
+        ],
+        "radar_label": "심상치 않은 고래 · #9",
+        "radar_tags": [
+          "의심 점수 63",
+          "월간 수익 $6.2M",
+          "주간 수익 $1.8M",
+          "월간 ROI +21.0%",
+          "총 포지션 $15.7M",
+          "최대 레버리지 40x"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 63/100. 월간 수익 $6.2M, 주간 수익 $1.8M, 월간 ROI +21.0%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x8af700ba",
+          "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+          "short_address": "0x8af700...1efa05",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "BTC",
+            "side": "LONG",
+            "size": 46.23883,
+            "entry_price": 70673.1,
+            "current_price": 80392.59999999999,
+            "position_value": 3717259.764658,
+            "unrealized_pnl": 449414.170217,
+            "roe_pct": 550.1045349,
+            "liquidation_price": null,
+            "margin_used": 92931.494116,
+            "leverage": 40
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "ETH",
+            "side": "LONG",
+            "size": 37.4459,
+            "entry_price": 1844.48,
+            "current_price": 2577.7,
+            "position_value": 96524.29643,
+            "unrealized_pnl": 27456.017331,
+            "roe_pct": 993.7998198700001,
+            "liquidation_price": null,
+            "margin_used": 3860.971857,
+            "leverage": 25
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "AVAX",
+            "side": "SHORT",
+            "size": -12091.83,
+            "entry_price": 42.1163,
+            "current_price": 9.5759,
+            "position_value": 115790.154897,
+            "unrealized_pnl": 393474.155953,
+            "roe_pct": 772.63249666,
+            "liquidation_price": 1606.6658499532,
+            "margin_used": 11579.015489,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "SUI",
+            "side": "SHORT",
+            "size": -63739.9,
+            "entry_price": 2.31644,
+            "current_price": 0.82387,
+            "position_value": 52513.391413,
+            "unrealized_pnl": 95136.762339,
+            "roe_pct": 644.3390671899999,
+            "liquidation_price": 296.5873844105,
+            "margin_used": 5251.339141,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "KPEPE",
+            "side": "SHORT",
+            "size": -96500000,
+            "entry_price": 0.007044,
+            "current_price": 0.003999,
+            "position_value": 385903.5,
+            "unrealized_pnl": 293907.249137,
+            "roe_pct": 432.33686656000003,
+            "liquidation_price": 0.1993558584,
+            "margin_used": 38590.35,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "CRV",
+            "side": "SHORT",
+            "size": -441827.7,
+            "entry_price": 0.32045,
+            "current_price": 0.33148,
+            "position_value": 146457.045996,
+            "unrealized_pnl": -4870.91422,
+            "roe_pct": -34.40248108,
+            "liquidation_price": 42.9995536228,
+            "margin_used": 14645.704599,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "LINK",
+            "side": "SHORT",
+            "size": -98661.2,
+            "entry_price": 14.08033,
+            "current_price": 12.029000000000002,
+            "position_value": 1186795.5748,
+            "unrealized_pnl": 202386.965245,
+            "roe_pct": 145.68781237,
+            "liquidation_price": 203.088669538,
+            "margin_used": 118679.55748,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "XRP",
+            "side": "SHORT",
+            "size": -696000,
+            "entry_price": 1.493915,
+            "current_price": 1.3784,
+            "position_value": 959366.4,
+            "unrealized_pnl": 80398.6156,
+            "roe_pct": 154.64766441,
+            "liquidation_price": 29.1251531172,
+            "margin_used": 47968.32,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "AAVE",
+            "side": "SHORT",
+            "size": -9133.75,
+            "entry_price": 131.4882,
+            "current_price": 137.4,
+            "position_value": 1254977.25,
+            "unrealized_pnl": -53996.5034,
+            "roe_pct": -44.96034058,
+            "liquidation_price": 2200.854452023,
+            "margin_used": 125497.725,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "KSHIB",
+            "side": "SHORT",
+            "size": -12000000,
+            "entry_price": 0.015504,
+            "current_price": 0.005383,
+            "position_value": 64596,
+            "unrealized_pnl": 121460.179476,
+            "roe_pct": 652.81454138,
+            "liquidation_price": 1.5160878389,
+            "margin_used": 6459.6,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "UNI",
+            "side": "SHORT",
+            "size": -61000,
+            "entry_price": 9.03595,
+            "current_price": 8.805800000000001,
+            "position_value": 537153.8,
+            "unrealized_pnl": 14039.7,
+            "roe_pct": 25.471454220000002,
+            "liquidation_price": 317.8539447897,
+            "margin_used": 53715.38,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "ADA",
+            "side": "SHORT",
+            "size": -1086001,
+            "entry_price": 0.709813,
+            "current_price": 0.22075,
+            "position_value": 239734.72075,
+            "unrealized_pnl": 531123.644528,
+            "roe_pct": 689.00289398,
+            "liquidation_price": 17.5797918721,
+            "margin_used": 23973.472075,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "PENDLE",
+            "side": "SHORT",
+            "size": -155378,
+            "entry_price": 5.502951,
+            "current_price": 2.5825,
+            "position_value": 401263.685,
+            "unrealized_pnl": 453773.8369,
+            "roe_pct": 265.35317181,
+            "liquidation_price": 123.9120114635,
+            "margin_used": 80252.737,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "NEAR",
+            "side": "SHORT",
+            "size": -399140,
+            "entry_price": 3.29351,
+            "current_price": 3.4801,
+            "position_value": 1389047.114,
+            "unrealized_pnl": -74471.958399,
+            "roe_pct": -56.65097053,
+            "liquidation_price": 50.684046025,
+            "margin_used": 138904.7114,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "FIL",
+            "side": "SHORT",
+            "size": -143000,
+            "entry_price": 3.18908,
+            "current_price": 0.9555,
+            "position_value": 136636.5,
+            "unrealized_pnl": 319402.522378,
+            "roe_pct": 350.19209619,
+            "liquidation_price": 126.7948749128,
+            "margin_used": 27327.3,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "STRK",
+            "side": "SHORT",
+            "size": -4500000,
+            "entry_price": 0.13637,
+            "current_price": 0.04461,
+            "position_value": 200745,
+            "unrealized_pnl": 412949.884498,
+            "roe_pct": 336.44559775,
+            "liquidation_price": 4.0435056917,
+            "margin_used": 40149,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "GRASS",
+            "side": "SHORT",
+            "size": -238431.2,
+            "entry_price": 2.86895,
+            "current_price": 0.35946,
+            "position_value": 85706.479152,
+            "unrealized_pnl": 598342.435258,
+            "roe_pct": 262.41212695999997,
+            "liquidation_price": 75.8320936676,
+            "margin_used": 28568.826384,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -47728.12,
+            "entry_price": 85.368,
+            "current_price": 90.884,
+            "position_value": 4337722.45808,
+            "unrealized_pnl": -263267.14909,
+            "roe_pct": -19.384221630000003,
+            "liquidation_price": 482.8322334309,
+            "margin_used": 1445907.486026,
+            "leverage": 3
+          },
+          {
+            "wallet_label": "0x8af700ba",
+            "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+            "coin": "ZEC",
+            "side": "SHORT",
+            "size": -293.14,
+            "entry_price": 1471.0018,
+            "current_price": 1452.5,
+            "position_value": 425785.85,
+            "unrealized_pnl": 5423.618,
+            "roe_pct": 6.288843819999999,
+            "liquidation_price": 65762.8528422369,
+            "margin_used": 85157.17,
+            "leverage": 5
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 10,
+      "candidate": {
+        "address": "0xf02d028ffeddc120a3ec59602a6617303ca55eb3",
+        "label": "0xf02d028f",
+        "short_address": "0xf02d02...a55eb3",
+        "score": 80,
+        "account_value": 15358785.442122,
+        "day_pnl": 825494.507029,
+        "week_pnl": 1617965.106997,
+        "month_pnl": 2539347.641932,
+        "month_roi": 0.194950818,
+        "insider_suspicion_score": 58,
+        "insider_reasons": [
+          "월간 수익 $2.5M",
+          "주간 수익 $1.6M",
+          "월간 ROI +19.5%",
+          "총 포지션 $22.2M",
+          "단일 종목 비중 100%",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 8,
+            "evidence": "월간 수익 $2.5M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.6M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 4,
+            "evidence": "월간 ROI +19.5%"
+          },
+          {
+            "code": "TOTAL_EXPOSURE",
+            "points": 10,
+            "evidence": "총 포지션 $22.2M"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 15,
+            "evidence": "단일 종목 비중 100%"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "심상치 않은 고래 · #10",
+        "radar_tags": [
+          "의심 점수 58",
+          "월간 수익 $2.5M",
+          "주간 수익 $1.6M",
+          "월간 ROI +19.5%",
+          "총 포지션 $22.2M",
+          "단일 종목 비중 100%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 58/100. 월간 수익 $2.5M, 주간 수익 $1.6M, 월간 ROI +19.5%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0xf02d028f",
+          "address": "0xf02d028ffeddc120a3ec59602a6617303ca55eb3",
+          "short_address": "0xf02d02...a55eb3",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0xf02d028f",
+            "address": "0xf02d028ffeddc120a3ec59602a6617303ca55eb3",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -244494.09,
+            "entry_price": 74.5777,
+            "current_price": 90.884,
+            "position_value": 22220600.87556,
+            "unrealized_pnl": -3986773.806565,
+            "roe_pct": -218.64712171999997,
+            "liquidation_price": 120.4996088483,
+            "margin_used": 2222060.087556,
+            "leverage": 10
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 11,
+      "candidate": {
+        "address": "0xceec48581b3145a575508719f45da07dc57fa7ce",
+        "label": "0xceec4858",
+        "short_address": "0xceec48...7fa7ce",
+        "score": 80,
+        "account_value": 17195138.253913,
+        "day_pnl": 159708.029223,
+        "week_pnl": 1640144.013683,
+        "month_pnl": 2675080.44581,
+        "month_roi": 0.1648703177,
+        "insider_suspicion_score": 48,
+        "insider_reasons": [
+          "월간 수익 $2.7M",
+          "주간 수익 $1.6M",
+          "월간 ROI +16.5%",
+          "단일 종목 비중 100%",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 8,
+            "evidence": "월간 수익 $2.7M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.6M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 4,
+            "evidence": "월간 ROI +16.5%"
+          },
+          {
+            "code": "POSITION_CONCENTRATION",
+            "points": 15,
+            "evidence": "단일 종목 비중 100%"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "물린 고래 · #11",
+        "radar_tags": [
+          "의심 점수 48",
+          "월간 수익 $2.7M",
+          "주간 수익 $1.6M",
+          "월간 ROI +16.5%",
+          "단일 종목 비중 100%",
+          "숏 방향 비중 100%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 48/100. 월간 수익 $2.7M, 주간 수익 $1.6M, 월간 ROI +16.5%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0xceec4858",
+          "address": "0xceec48581b3145a575508719f45da07dc57fa7ce",
+          "short_address": "0xceec48...7fa7ce",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 80,
+        "verdict": "HOT",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0xceec4858",
+            "address": "0xceec48581b3145a575508719f45da07dc57fa7ce",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -50000,
+            "entry_price": 82.6188,
+            "current_price": 90.884,
+            "position_value": 4544200,
+            "unrealized_pnl": -413259.524057,
+            "roe_pct": -50.02002891,
+            "liquidation_price": 152.0137380848,
+            "margin_used": 908840,
+            "leverage": 5
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 13,
+      "candidate": {
+        "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "label": "stuxfred",
+        "short_address": "0x69906b...ccf207",
+        "score": 74.75432578217,
+        "account_value": 6458724.782027999,
+        "day_pnl": 68382.159388,
+        "week_pnl": 692831.2698659999,
+        "month_pnl": 1405948.4446049999,
+        "month_roi": 0.2127033352,
+        "insider_suspicion_score": 34,
+        "insider_reasons": [
+          "월간 수익 $1.4M",
+          "주간 수익 $693K",
+          "월간 ROI +21.3%",
+          "최대 레버리지 40x"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 8,
+            "evidence": "월간 수익 $1.4M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 5,
+            "evidence": "주간 수익 $693K"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 7,
+            "evidence": "월간 ROI +21.3%"
+          },
+          {
+            "code": "MAX_LEVERAGE",
+            "points": 14,
+            "evidence": "최대 레버리지 40x"
+          }
+        ],
+        "radar_label": "고레버리지 승부사 · stuxfred",
+        "radar_tags": [
+          "의심 점수 34",
+          "월간 수익 $1.4M",
+          "주간 수익 $693K",
+          "월간 ROI +21.3%",
+          "최대 레버리지 40x"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 34/100. 월간 수익 $1.4M, 주간 수익 $693K, 월간 ROI +21.3%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "stuxfred",
+          "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+          "short_address": "0x69906b...ccf207",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 74.75432578217,
+        "verdict": "WATCH",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x69906b0e",
+            "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+            "coin": "BTC",
+            "side": "LONG",
+            "size": 10.7,
+            "entry_price": 80920.5,
+            "current_price": 80392.6,
+            "position_value": 860200.82,
+            "unrealized_pnl": -5648.576752,
+            "roe_pct": -26.09496189,
+            "liquidation_price": null,
+            "margin_used": 21505.0205,
+            "leverage": 40
+          },
+          {
+            "wallet_label": "0x69906b0e",
+            "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+            "coin": "SOL",
+            "side": "LONG",
+            "size": 5000,
+            "entry_price": 109.5654,
+            "current_price": 108.87,
+            "position_value": 544350,
+            "unrealized_pnl": -3477.2233,
+            "roe_pct": -12.69459841,
+            "liquidation_price": null,
+            "margin_used": 27217.5,
+            "leverage": 20
+          },
+          {
+            "wallet_label": "0x69906b0e",
+            "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+            "coin": "ETHFI",
+            "side": "SHORT",
+            "size": -544500.6,
+            "entry_price": 0.64756,
+            "current_price": 0.70342,
+            "position_value": 383012.612052,
+            "unrealized_pnl": -30411.560034,
+            "roe_pct": -43.12460195,
+            "liquidation_price": 3.2564257422,
+            "margin_used": 76602.52241,
+            "leverage": 5
+          },
+          {
+            "wallet_label": "0x69906b0e",
+            "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+            "coin": "HYPE",
+            "side": "SHORT",
+            "size": -15700,
+            "entry_price": 90.4878,
+            "current_price": 90.884,
+            "position_value": 1426878.8,
+            "unrealized_pnl": -6218.937676,
+            "roe_pct": -4.3774993900000005,
+            "liquidation_price": 183.6425365049,
+            "margin_used": 142687.88,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x69906b0e",
+            "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+            "coin": "LIT",
+            "side": "LONG",
+            "size": 10000,
+            "entry_price": 4.580633,
+            "current_price": 4.6454,
+            "position_value": 46454,
+            "unrealized_pnl": 647.6607,
+            "roe_pct": 7.06955314,
+            "liquidation_price": 4.0727865677,
+            "margin_used": 9798.920891,
+            "leverage": 5
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    },
+    {
+      "rank": 16,
+      "candidate": {
+        "address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+        "label": "0x007d76ee",
+        "short_address": "0x007d76...d967a0",
+        "score": 73.3700478842,
+        "account_value": 11963389.526337,
+        "day_pnl": 13700.478842,
+        "week_pnl": 1360431.598752,
+        "month_pnl": 2194407.743717,
+        "month_roi": 0.1201264729,
+        "insider_suspicion_score": 33,
+        "insider_reasons": [
+          "월간 수익 $2.2M",
+          "주간 수익 $1.4M",
+          "월간 ROI +12.0%",
+          "숏 방향 비중 100%"
+        ],
+        "insider_suspicion_factors": [
+          {
+            "code": "MONTH_PROFIT",
+            "points": 8,
+            "evidence": "월간 수익 $2.2M"
+          },
+          {
+            "code": "WEEK_PROFIT",
+            "points": 8,
+            "evidence": "주간 수익 $1.4M"
+          },
+          {
+            "code": "MONTH_ROI",
+            "points": 4,
+            "evidence": "월간 ROI +12.0%"
+          },
+          {
+            "code": "DIRECTION_BIAS",
+            "points": 13,
+            "evidence": "숏 방향 비중 100%"
+          }
+        ],
+        "radar_label": "숏 집중 고래 · #16",
+        "radar_tags": [
+          "의심 점수 33",
+          "월간 수익 $2.2M",
+          "주간 수익 $1.4M",
+          "월간 ROI +12.0%",
+          "숏 방향 비중 100%"
+        ],
+        "radar_summary": "공개 데이터 기반 의심 점수 33/100. 월간 수익 $2.2M, 주간 수익 $1.4M, 월간 ROI +12.0%. 실제 내부자 또는 불법행위 여부를 판정한 결과가 아닙니다.",
+        "watched": false
+      },
+      "snapshot": {
+        "wallet": {
+          "label": "0x007d76ee",
+          "address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+          "short_address": "0x007d76...d967a0",
+          "tags": [],
+          "weight": 1,
+          "enabled": true,
+          "notes": ""
+        },
+        "score": 73.3700478842,
+        "verdict": "WATCH",
+        "recent_fills": [],
+        "open_positions": [
+          {
+            "wallet_label": "0x007d76ee",
+            "address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+            "coin": "ADA",
+            "side": "SHORT",
+            "size": -2000000,
+            "entry_price": 0.208521,
+            "current_price": 0.22075,
+            "position_value": 441500,
+            "unrealized_pnl": -24456.20372,
+            "roe_pct": -58.64181158,
+            "liquidation_price": 0.5181867311,
+            "margin_used": 44150,
+            "leverage": 10
+          },
+          {
+            "wallet_label": "0x007d76ee",
+            "address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+            "coin": "TRUMP",
+            "side": "SHORT",
+            "size": -237685.7,
+            "entry_price": 3.47186,
+            "current_price": 2.02519,
+            "position_value": 481358.702783,
+            "unrealized_pnl": 343853.624251,
+            "roe_pct": 416.68503122000004,
+            "liquidation_price": 4.527963462,
+            "margin_used": 48135.870278,
+            "leverage": 10
+          }
+        ],
+        "closed_pnl_usd": 0,
+        "fees_usd": 0,
+        "volume_usd": 0,
+        "newest_fill_ms": null,
+        "error": null
+      }
+    }
+  ],
+  "picks": [
+    {
+      "coin": "HYPE",
+      "side": "SHORT",
+      "walletCount": 6,
+      "positionValue": 43474191.45085999,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -5993322.998547001,
+      "avgScore": 79.125720963695,
+      "avgRoe": -153.6393336293799,
+      "dominance": 0.9972061233430097,
+      "conviction": 84.94398509591993,
+      "headline": "고래 6곳, HYPE 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 6개",
+        "포지션 노출 $43.5M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$6.0M",
+        "가중 평균 ROE -153.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:HYPEUSDC.P"
+    },
+    {
+      "coin": "ZEC",
+      "side": "SHORT",
+      "walletCount": 3,
+      "positionValue": 16221731.079,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -502501.666,
+      "avgScore": 80,
+      "avgRoe": -33.948674740981524,
+      "dominance": 0.9976819727881552,
+      "conviction": 80.25175553028636,
+      "headline": "고래 3곳, ZEC 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $16.2M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$503K",
+        "가중 평균 ROE -33.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ZECUSDC.P"
+    },
+    {
+      "coin": "SOL",
+      "side": "SHORT",
+      "walletCount": 3,
+      "positionValue": 14208634.587,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 185790.71683,
+      "avgScore": 80,
+      "avgRoe": 25.334632674135115,
+      "dominance": 0.9571281571692555,
+      "conviction": 79.23409509480548,
+      "headline": "고래 3곳, SOL 숏 96% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $14.2M",
+        "숏 방향 비중 96%",
+        "미실현 손익 +$186K",
+        "가중 평균 ROE +25.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SOLUSDC.P"
+    },
+    {
+      "coin": "XRP",
+      "side": "SHORT",
+      "walletCount": 3,
+      "positionValue": 7851277.133400001,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 327187.32689,
+      "avgScore": 80,
+      "avgRoe": 79.59585407602826,
+      "dominance": 1,
+      "conviction": 77.71286615659055,
+      "headline": "고래 3곳, XRP 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $7.9M",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$327K",
+        "가중 평균 ROE +79.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:XRPUSDC.P"
+    },
+    {
+      "coin": "BTC",
+      "side": "LONG",
+      "walletCount": 3,
+      "positionValue": 44773460.584658,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -87868.96907499994,
+      "avgScore": 78.25144192738999,
+      "avgRoe": 15.873181164422032,
+      "dominance": 0.6463837393169164,
+      "conviction": 75.31867117225445,
+      "headline": "BTC 롱 65% 편중, 고래 손익은 엇갈림",
+      "tone": "mixed",
+      "label_code": "MIXED_PNL",
+      "label": "손익 신호 엇갈림",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $44.8M",
+        "롱 방향 비중 65%",
+        "미실현 손익 -$88K",
+        "가중 평균 ROE +15.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:BTCUSDC.P"
+    },
+    {
+      "coin": "ETH",
+      "side": "SHORT",
+      "walletCount": 2,
+      "positionValue": 22658515.81096,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -446511.7179,
+      "avgScore": 80,
+      "avgRoe": -41.33133224268911,
+      "dominance": 0.6356857760537842,
+      "conviction": 71.72658224547168,
+      "headline": "고래 2곳, ETH 숏 64% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $22.7M",
+        "숏 방향 비중 64%",
+        "미실현 손익 -$447K",
+        "가중 평균 ROE -41.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ETHUSDC.P"
+    },
+    {
+      "coin": "ETH",
+      "side": "LONG",
+      "walletCount": 3,
+      "positionValue": 12985691.85343,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -198523.286654,
+      "avgScore": 80,
+      "avgRoe": -35.368912721502994,
+      "dominance": 0.3643142239462158,
+      "conviction": 71.6459511553862,
+      "headline": "고래 3곳, ETH 롱 36% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $13.0M",
+        "롱 방향 비중 36%",
+        "미실현 손익 -$199K",
+        "가중 평균 ROE -35.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ETHUSDC.P"
+    },
+    {
+      "coin": "BTC",
+      "side": "SHORT",
+      "walletCount": 2,
+      "positionValue": 24494155.32408,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -296815.01091,
+      "avgScore": 80,
+      "avgRoe": -26.2428342151115,
+      "dominance": 0.35361626068308355,
+      "conviction": 69.70468716149861,
+      "headline": "고래 2곳, BTC 숏 35% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $24.5M",
+        "숏 방향 비중 35%",
+        "미실현 손익 -$297K",
+        "가중 평균 ROE -26.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:BTCUSDC.P"
+    },
+    {
+      "coin": "XMR",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 3348220.3348,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -65633.73954,
+      "avgScore": 80,
+      "avgRoe": -5.998355649999999,
+      "dominance": 1,
+      "conviction": 65.6473427749847,
+      "headline": "고래 1곳, XMR 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $3.3M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$66K",
+        "가중 평균 ROE -6.0%"
+      ],
+      "chart_symbol": "HYPERLIQUID:XMRUSDC.P"
+    },
+    {
+      "coin": "UNI",
+      "side": "SHORT",
+      "walletCount": 3,
+      "positionValue": 1376973.3317200001,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -340343.377568,
+      "avgScore": 80,
+      "avgRoe": -436.0925432217286,
+      "dominance": 1,
+      "conviction": 65.4397035983265,
+      "headline": "고래 3곳, UNI 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $1.4M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$340K",
+        "가중 평균 ROE -436.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:UNIUSDC.P"
+    },
+    {
+      "coin": "XPL",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 2923582.864013,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 73414.080608,
+      "avgScore": 80,
+      "avgRoe": 12.24794052,
+      "dominance": 0.8653652906140145,
+      "conviction": 62.483395310798244,
+      "headline": "고래 1곳, XPL 숏 87% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $2.9M",
+        "숏 방향 비중 87%",
+        "미실현 손익 +$73K",
+        "가중 평균 ROE +12.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:XPLUSDC.P"
+    },
+    {
+      "coin": "NEAR",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 1389047.114,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -74471.958399,
+      "avgScore": 80,
+      "avgRoe": -56.65097053000001,
+      "dominance": 0.9990082871703898,
+      "conviction": 58.49791995981984,
+      "headline": "고래 1곳, NEAR 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1.4M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$74K",
+        "가중 평균 ROE -56.7%"
+      ],
+      "chart_symbol": "HYPERLIQUID:NEARUSDC.P"
+    },
+    {
+      "coin": "AAVE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 1254977.25,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -53996.5034,
+      "avgScore": 80,
+      "avgRoe": -44.96034058,
+      "dominance": 1,
+      "conviction": 57.654717067082856,
+      "headline": "고래 1곳, AAVE 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1.3M",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$54K",
+        "가중 평균 ROE -45.0%"
+      ],
+      "chart_symbol": "HYPERLIQUID:AAVEUSDC.P"
+    },
+    {
+      "coin": "LINK",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 1186795.5748,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 202386.965245,
+      "avgScore": 80,
+      "avgRoe": 145.68781237,
+      "dominance": 1,
+      "conviction": 57.18494714980452,
+      "headline": "고래 1곳, LINK 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1.2M",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$202K",
+        "가중 평균 ROE +145.7%"
+      ],
+      "chart_symbol": "HYPERLIQUID:LINKUSDC.P"
+    },
+    {
+      "coin": "AERO",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 897073.180365,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 13582.994038,
+      "avgScore": 80,
+      "avgRoe": 4.47468356,
+      "dominance": 1,
+      "conviction": 54.890720476223585,
+      "headline": "고래 1곳, AERO 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $897K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$14K",
+        "가중 평균 ROE +4.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:AEROUSDC.P"
+    },
+    {
+      "coin": "ADA",
+      "side": "SHORT",
+      "walletCount": 2,
+      "positionValue": 681234.72075,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 506667.44080800004,
+      "avgScore": 76.6850239421,
+      "avgRoe": 204.46338439461746,
+      "dominance": 1,
+      "conviction": 54.22276229077194,
+      "headline": "고래 2곳, ADA 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $681K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$507K",
+        "가중 평균 ROE +204.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ADAUSDC.P"
+    },
+    {
+      "coin": "TRUMP",
+      "side": "SHORT",
+      "walletCount": 2,
+      "positionValue": 481899.28204300004,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 344947.804886,
+      "avgScore": 76.6850239421,
+      "avgRoe": 416.4428544304002,
+      "dominance": 1,
+      "conviction": 51.87112298797226,
+      "headline": "고래 2곳, TRUMP 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $482K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$345K",
+        "가중 평균 ROE +416.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:TRUMPUSDC.P"
+    },
+    {
+      "coin": "SOL",
+      "side": "LONG",
+      "walletCount": 3,
+      "positionValue": 636435.5121,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 20266.240292,
+      "avgScore": 78.25144192738999,
+      "avgRoe": 89.7400821996781,
+      "dominance": 0.042871842830744515,
+      "conviction": 50.207137684597186,
+      "headline": "고래 3곳, SOL 롱 4% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 3개",
+        "포지션 노출 $636K",
+        "롱 방향 비중 4%",
+        "미실현 손익 +$20K",
+        "가중 평균 ROE +89.7%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SOLUSDC.P"
+    },
+    {
+      "coin": "PENDLE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 401263.685,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 453773.8369,
+      "avgScore": 80,
+      "avgRoe": 265.35317181,
+      "dominance": 1,
+      "conviction": 49.3424021512478,
+      "headline": "고래 1곳, PENDLE 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $401K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$454K",
+        "가중 평균 ROE +265.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:PENDLEUSDC.P"
+    },
+    {
+      "coin": "KPEPE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 385903.5,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 293907.249137,
+      "avgScore": 80,
+      "avgRoe": 432.33686656000003,
+      "dominance": 1,
+      "conviction": 49.12392561443361,
+      "headline": "고래 1곳, KPEPE 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $386K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$294K",
+        "가중 평균 ROE +432.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:KPEPEUSDC.P"
+    },
+    {
+      "coin": "LIT",
+      "side": "LONG",
+      "walletCount": 2,
+      "positionValue": 120545.0795,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 6537.343184,
+      "avgScore": 77.37716289108499,
+      "avgRoe": 18.647785074348807,
+      "dominance": 1,
+      "conviction": 46.56378662504077,
+      "headline": "고래 2곳, LIT 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $121K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$7K",
+        "가중 평균 ROE +18.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:LITUSDC.P"
+    },
+    {
+      "coin": "BNB",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 221132.73336,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -49579.2855,
+      "avgScore": 80,
+      "avgRoe": -144.50098823,
+      "dominance": 1,
+      "conviction": 46.53501826937097,
+      "headline": "고래 1곳, BNB 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $221K",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$50K",
+        "가중 평균 ROE -144.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:BNBUSDC.P"
+    },
+    {
+      "coin": "TAO",
+      "side": "LONG",
+      "walletCount": 2,
+      "positionValue": 37562.6304,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 1230.447954,
+      "avgScore": 80,
+      "avgRoe": 16.938300957618154,
+      "dominance": 1,
+      "conviction": 46.49728612134719,
+      "headline": "고래 2곳, TAO 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $38K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$1K",
+        "가중 평균 ROE +16.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:TAOUSDC.P"
+    },
+    {
+      "coin": "STRK",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 200745,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 412949.884498,
+      "avgScore": 80,
+      "avgRoe": 336.44559775,
+      "dominance": 1,
+      "conviction": 46.17980796650879,
+      "headline": "고래 1곳, STRK 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $201K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$413K",
+        "가중 평균 ROE +336.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:STRKUSDC.P"
+    },
+    {
+      "coin": "ETHFI",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 383012.612052,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -30411.560034,
+      "avgScore": 74.75432578217,
+      "avgRoe": -43.12460195,
+      "dominance": 1,
+      "conviction": 45.81843328025578,
+      "headline": "고래 1곳, ETHFI 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $383K",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$30K",
+        "가중 평균 ROE -43.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ETHFIUSDC.P"
+    },
+    {
+      "coin": "CRV",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 146457.045996,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -4870.91422,
+      "avgScore": 80,
+      "avgRoe": -34.40248108,
+      "dominance": 1,
+      "conviction": 45.191063553286746,
+      "headline": "고래 1곳, CRV 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $146K",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$5K",
+        "가중 평균 ROE -34.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:CRVUSDC.P"
+    },
+    {
+      "coin": "FIL",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 136636.5,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 319402.522378,
+      "avgScore": 80,
+      "avgRoe": 350.19209619,
+      "dominance": 1,
+      "conviction": 45.005196175204446,
+      "headline": "고래 1곳, FIL 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $137K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$319K",
+        "가중 평균 ROE +350.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:FILUSDC.P"
+    },
+    {
+      "coin": "AVAX",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 115790.154897,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 393474.155953,
+      "avgScore": 80,
+      "avgRoe": 772.63249666,
+      "dominance": 1,
+      "conviction": 44.603162058451595,
+      "headline": "고래 1곳, AVAX 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $116K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$393K",
+        "가중 평균 ROE +772.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:AVAXUSDC.P"
+    },
+    {
+      "coin": "GRASS",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 85706.479152,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 598342.435258,
+      "avgScore": 80,
+      "avgRoe": 262.41212695999997,
+      "dominance": 1,
+      "conviction": 44.00434616755787,
+      "headline": "고래 1곳, GRASS 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $86K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$598K",
+        "가중 평균 ROE +262.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:GRASSUSDC.P"
+    },
+    {
+      "coin": "KSHIB",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 64596,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 121460.179476,
+      "avgScore": 80,
+      "avgRoe": 652.81454138,
+      "dominance": 1,
+      "conviction": 43.57039261253384,
+      "headline": "고래 1곳, KSHIB 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $65K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$121K",
+        "가중 평균 ROE +652.8%"
+      ],
+      "chart_symbol": "HYPERLIQUID:KSHIBUSDC.P"
+    },
+    {
+      "coin": "ASTER",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 42576.294288,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -3106.649149,
+      "avgScore": 80,
+      "avgRoe": -23.61294968,
+      "dominance": 1,
+      "conviction": 43.105092863900666,
+      "headline": "고래 1곳, ASTER 숏 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $43K",
+        "숏 방향 비중 100%",
+        "미실현 손익 -$3K",
+        "가중 평균 ROE -23.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ASTERUSDC.P"
+    },
+    {
+      "coin": "PUMP",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 5399.078322,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 2066.163251,
+      "avgScore": 80,
+      "avgRoe": 309.96338145000004,
+      "dominance": 1,
+      "conviction": 42.28860686550923,
+      "headline": "고래 1곳, PUMP 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $5K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$2K",
+        "가중 평균 ROE +310.0%"
+      ],
+      "chart_symbol": "HYPERLIQUID:PUMPUSDC.P"
+    },
+    {
+      "coin": "STABLE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 5156.877852,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 2708.863502,
+      "avgScore": 80,
+      "avgRoe": 103.31626913000001,
+      "dominance": 1,
+      "conviction": 42.28315541913359,
+      "headline": "고래 1곳, STABLE 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $5K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$3K",
+        "가중 평균 ROE +103.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:STABLEUSDC.P"
+    },
+    {
+      "coin": "USELESS",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 2431.64527,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 512.581065,
+      "avgScore": 80,
+      "avgRoe": 52.22910945,
+      "dominance": 1,
+      "conviction": 42.22169475359513,
+      "headline": "고래 1곳, USELESS 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $2K",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$513",
+        "가중 평균 ROE +52.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:USELESSUSDC.P"
+    },
+    {
+      "coin": "PURR",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 2228.38161,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 24.513652,
+      "avgScore": 80,
+      "avgRoe": 3.3369039099999998,
+      "dominance": 1,
+      "conviction": 42.21710172412364,
+      "headline": "고래 1곳, PURR 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $2K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$25",
+        "가중 평균 ROE +3.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:PURRUSDC.P"
+    },
+    {
+      "coin": "PAXG",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 1914.6985,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 127.2993,
+      "avgScore": 80,
+      "avgRoe": 35.61020392,
+      "dominance": 1,
+      "conviction": 42.21001117156099,
+      "headline": "고래 1곳, PAXG 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $2K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$127",
+        "가중 평균 ROE +35.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:PAXGUSDC.P"
+    },
+    {
+      "coin": "FARTCOIN",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 1423.388538,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 208.291787,
+      "avgScore": 80,
+      "avgRoe": 85.70995965,
+      "dominance": 1,
+      "conviction": 42.19889955358015,
+      "headline": "고래 1곳, FARTCOIN 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$208",
+        "가중 평균 ROE +85.7%"
+      ],
+      "chart_symbol": "HYPERLIQUID:FARTCOINUSDC.P"
+    },
+    {
+      "coin": "MON",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 1012.219832,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 54.653976,
+      "avgScore": 80,
+      "avgRoe": 28.537972430000003,
+      "dominance": 1,
+      "conviction": 42.18959484395482,
+      "headline": "고래 1곳, MON 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1K",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$55",
+        "가중 평균 ROE +28.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:MONUSDC.P"
+    },
+    {
+      "coin": "ZORA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 748.564128,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 111.417045,
+      "avgScore": 80,
+      "avgRoe": 52.460592530000014,
+      "dominance": 1,
+      "conviction": 42.183625656973476,
+      "headline": "고래 1곳, ZORA 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $749",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$111",
+        "가중 평균 ROE +52.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ZORAUSDC.P"
+    },
+    {
+      "coin": "HEMI",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 663.03555,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -9.21327,
+      "avgScore": 80,
+      "avgRoe": -4.11154459,
+      "dominance": 1,
+      "conviction": 42.18168883231343,
+      "headline": "고래 1곳, HEMI 롱 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $663",
+        "롱 방향 비중 100%",
+        "미실현 손익 -$9",
+        "가중 평균 ROE -4.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:HEMIUSDC.P"
+    },
+    {
+      "coin": "GRAM",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 624.3965,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 6.530629,
+      "avgScore": 80,
+      "avgRoe": 5.28482742,
+      "dominance": 1,
+      "conviction": 42.18081376506751,
+      "headline": "고래 1곳, GRAM 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $624",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$7",
+        "가중 평균 ROE +5.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:GRAMUSDC.P"
+    },
+    {
+      "coin": "MEGA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 594.39037,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 31.252296,
+      "avgScore": 80,
+      "avgRoe": 16.649005340000002,
+      "dominance": 1,
+      "conviction": 42.18013417841381,
+      "headline": "고래 1곳, MEGA 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $594",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$31",
+        "가중 평균 ROE +16.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:MEGAUSDC.P"
+    },
+    {
+      "coin": "TIA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 566.4448,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 66.332358,
+      "avgScore": 80,
+      "avgRoe": 66.31744427000001,
+      "dominance": 1,
+      "conviction": 42.17950123541684,
+      "headline": "고래 1곳, TIA 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $566",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$66",
+        "가중 평균 ROE +66.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:TIAUSDC.P"
+    },
+    {
+      "coin": "MELANIA",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 556.325575,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 2033.609075,
+      "avgScore": 80,
+      "avgRoe": 235.55911826,
+      "dominance": 1,
+      "conviction": 42.1792720379064,
+      "headline": "고래 1곳, MELANIA 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $556",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$2K",
+        "가중 평균 ROE +235.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:MELANIAUSDC.P"
+    },
+    {
+      "coin": "SAGA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 548.208486,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 253.07746,
+      "avgScore": 80,
+      "avgRoe": 257.25264818,
+      "dominance": 1,
+      "conviction": 42.17908818596114,
+      "headline": "고래 1곳, SAGA 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $548",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$253",
+        "가중 평균 ROE +257.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SAGAUSDC.P"
+    },
+    {
+      "coin": "PONS",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 447.78,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 127.11834,
+      "avgScore": 80,
+      "avgRoe": 66.33434009,
+      "dominance": 1,
+      "conviction": 42.1768133176884,
+      "headline": "고래 1곳, PONS 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $448",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$127",
+        "가중 평균 ROE +66.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:PONSUSDC.P"
+    },
+    {
+      "coin": "BERA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 435.784575,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -5019.907125,
+      "avgScore": 80,
+      "avgRoe": -460.06147351,
+      "dominance": 1,
+      "conviction": 42.1765415814763,
+      "headline": "고래 1곳, BERA 롱 100% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $436",
+        "롱 방향 비중 100%",
+        "미실현 손익 -$5K",
+        "가중 평균 ROE -460.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:BERAUSDC.P"
+    },
+    {
+      "coin": "CHIP",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 403.634,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 44.166939,
+      "avgScore": 80,
+      "avgRoe": 36.86035005,
+      "dominance": 1,
+      "conviction": 42.17581324275393,
+      "headline": "고래 1곳, CHIP 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $404",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$44",
+        "가중 평균 ROE +36.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:CHIPUSDC.P"
+    },
+    {
+      "coin": "JUP",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 310.04688,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 16.875232,
+      "avgScore": 80,
+      "avgRoe": 57.56092758,
+      "dominance": 1,
+      "conviction": 42.17369294362983,
+      "headline": "고래 1곳, JUP 롱 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $310",
+        "롱 방향 비중 100%",
+        "미실현 손익 +$17",
+        "가중 평균 ROE +57.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:JUPUSDC.P"
+    },
+    {
+      "coin": "APT",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 273.096381,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 1875.931743,
+      "avgScore": 80,
+      "avgRoe": 872.92098323,
+      "dominance": 1,
+      "conviction": 42.17285572449647,
+      "headline": "고래 1곳, APT 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $273",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$2K",
+        "가중 평균 ROE +872.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:APTUSDC.P"
+    },
+    {
+      "coin": "SPX",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 98.1878,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 126.12837,
+      "avgScore": 80,
+      "avgRoe": 281.139719,
+      "dominance": 1,
+      "conviction": 42.16889211112567,
+      "headline": "고래 1곳, SPX 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $98",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$126",
+        "가중 평균 ROE +281.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SPXUSDC.P"
+    },
+    {
+      "coin": "LAYER",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 65.04627,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 112.6264,
+      "avgScore": 80,
+      "avgRoe": 190.16948413999998,
+      "dominance": 1,
+      "conviction": 42.16814098485406,
+      "headline": "고래 1곳, LAYER 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $65",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$113",
+        "가중 평균 ROE +190.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:LAYERUSDC.P"
+    },
+    {
+      "coin": "WLFI",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 48.10182,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 119.905469,
+      "avgScore": 80,
+      "avgRoe": 356.84603244,
+      "dominance": 1,
+      "conviction": 42.16775693962392,
+      "headline": "고래 1곳, WLFI 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $48",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$120",
+        "가중 평균 ROE +356.8%"
+      ],
+      "chart_symbol": "HYPERLIQUID:WLFIUSDC.P"
+    },
+    {
+      "coin": "MOVE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 40.3811,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 284.07338,
+      "avgScore": 80,
+      "avgRoe": 262.66246655000003,
+      "dominance": 1,
+      "conviction": 42.167581946959984,
+      "headline": "고래 1곳, MOVE 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $40",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$284",
+        "가중 평균 ROE +262.7%"
+      ],
+      "chart_symbol": "HYPERLIQUID:MOVEUSDC.P"
+    },
+    {
+      "coin": "DOGE",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 7.255855,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 0.45186,
+      "avgScore": 80,
+      "avgRoe": 58.624378300000004,
+      "dominance": 1,
+      "conviction": 42.166831131917775,
+      "headline": "고래 1곳, DOGE 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $7",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$0",
+        "가중 평균 ROE +58.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:DOGEUSDC.P"
+    },
+    {
+      "coin": "POPCAT",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 1.318707,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 11.684649,
+      "avgScore": 80,
+      "avgRoe": 269.57615403,
+      "dominance": 1,
+      "conviction": 42.166696557332386,
+      "headline": "고래 1곳, POPCAT 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$12",
+        "가중 평균 ROE +269.6%"
+      ],
+      "chart_symbol": "HYPERLIQUID:POPCATUSDC.P"
+    },
+    {
+      "coin": "USUAL",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 0.944526,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 17.212008,
+      "avgScore": 80,
+      "avgRoe": 284.39361829999996,
+      "dominance": 1,
+      "conviction": 42.16668807590918,
+      "headline": "고래 1곳, USUAL 숏 100% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1",
+        "숏 방향 비중 100%",
+        "미실현 손익 +$17",
+        "가중 평균 ROE +284.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:USUALUSDC.P"
+    },
+    {
+      "coin": "XPL",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 454855,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 4611.28677,
+      "avgScore": 80,
+      "avgRoe": 10.24175715,
+      "dominance": 0.13463470938598554,
+      "conviction": 42.07777516320477,
+      "headline": "고래 1곳, XPL 롱 13% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $455K",
+        "롱 방향 비중 13%",
+        "미실현 손익 +$5K",
+        "가중 평균 ROE +10.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:XPLUSDC.P"
+    },
+    {
+      "coin": "ZEC",
+      "side": "LONG",
+      "walletCount": 2,
+      "positionValue": 37689.78,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 25012.950109999998,
+      "avgScore": 80,
+      "avgRoe": 1218.3936253140268,
+      "dominance": 0.0023180272118448644,
+      "conviction": 38.50002885497489,
+      "headline": "고래 2곳, ZEC 롱 0% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 2개",
+        "포지션 노출 $38K",
+        "롱 방향 비중 0%",
+        "미실현 손익 +$25K",
+        "가중 평균 ROE +1218.4%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ZECUSDC.P"
+    },
+    {
+      "coin": "HYPE",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 121801.82796,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 5844.751334,
+      "avgScore": 80,
+      "avgRoe": 25.20221924,
+      "dominance": 0.0027938766569902728,
+      "conviction": 36.72016123008637,
+      "headline": "고래 1곳, HYPE 롱 0% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $122K",
+        "롱 방향 비중 0%",
+        "미실현 손익 +$6K",
+        "가중 평균 ROE +25.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:HYPEUSDC.P"
+    },
+    {
+      "coin": "ENA",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 946.85291,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 57.35169,
+      "avgScore": 80,
+      "avgRoe": 57.11155874,
+      "dominance": 0.6436981535991436,
+      "conviction": 36.487285584521615,
+      "headline": "고래 1곳, ENA 숏 64% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $947",
+        "숏 방향 비중 64%",
+        "미실현 손익 +$57",
+        "가중 평균 ROE +57.1%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ENAUSDC.P"
+    },
+    {
+      "coin": "SUI",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 53929.590176,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": -14902.964404,
+      "avgScore": 80,
+      "avgRoe": -216.51040695999998,
+      "dominance": 0.5066523820634237,
+      "conviction": 35.453084926514435,
+      "headline": "고래 1곳, SUI 롱 51% 몰렸다가 손실 중",
+      "tone": "trapped",
+      "label_code": "TRAPPED_WHALES",
+      "label": "물린 고래 군단",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $54K",
+        "롱 방향 비중 51%",
+        "미실현 손익 -$15K",
+        "가중 평균 ROE -216.5%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SUIUSDC.P"
+    },
+    {
+      "coin": "SUI",
+      "side": "SHORT",
+      "walletCount": 1,
+      "positionValue": 52513.391413,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 95136.762339,
+      "avgScore": 80,
+      "avgRoe": 644.3390671899998,
+      "dominance": 0.4933476179365763,
+      "conviction": 35.31670847494826,
+      "headline": "고래 1곳, SUI 숏 49% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $53K",
+        "숏 방향 비중 49%",
+        "미실현 손익 +$95K",
+        "가중 평균 ROE +644.3%"
+      ],
+      "chart_symbol": "HYPERLIQUID:SUIUSDC.P"
+    },
+    {
+      "coin": "NEAR",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 1378.90332,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 617.037977,
+      "avgScore": 80,
+      "avgRoe": 809.90424708,
+      "dominance": 0.000991712829610158,
+      "conviction": 34.197893103095424,
+      "headline": "고래 1곳, NEAR 롱 0% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $1K",
+        "롱 방향 비중 0%",
+        "미실현 손익 +$617",
+        "가중 평균 ROE +809.9%"
+      ],
+      "chart_symbol": "HYPERLIQUID:NEARUSDC.P"
+    },
+    {
+      "coin": "ENA",
+      "side": "LONG",
+      "walletCount": 1,
+      "positionValue": 524.10503,
+      "fillValue": 0,
+      "fillCount": 0,
+      "pnl": 108.863513,
+      "avgScore": 80,
+      "avgRoe": 262.16914384,
+      "dominance": 0.3563018464008563,
+      "conviction": 34.178542231317884,
+      "headline": "고래 1곳, ENA 롱 36% 집결",
+      "tone": "profit",
+      "label_code": "PROFITABLE_CONVERGENCE",
+      "label": "수익 동반 집결",
+      "reasons": [
+        "동일 방향 지갑 1개",
+        "포지션 노출 $524",
+        "롱 방향 비중 36%",
+        "미실현 손익 +$109",
+        "가중 평균 ROE +262.2%"
+      ],
+      "chart_symbol": "HYPERLIQUID:ENAUSDC.P"
+    }
+  ],
+  "summary": {
+    "observed_at_ms": 1789879792876,
+    "scanned_candidates": 24,
+    "source": {
+      "name": "Hyperliquid public leaderboard and Info API",
+      "provider": "Hyperliquid",
+      "leaderboard_url": "https://stats-data.hyperliquid.xyz/Mainnet/leaderboard",
+      "info_api_url": "https://api.hyperliquid.xyz/info",
+      "radar_source": "vercel_lightweight_hyperliquid"
+    },
+    "capture_parameters": {
+      "top": 12,
+      "pool": 36,
+      "scan_limit": 24,
+      "min_score": 45,
+      "lookback_hours": 6
+    },
+    "wallet_count": 12,
+    "position_count": 91,
+    "long_usd": 59240747.13866499,
+    "short_usd": 144694716.24801496,
+    "gross_usd": 203935463.38667995,
+    "net_usd": -85453969.10934997,
+    "largest_position": {
+      "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+      "wallet_label": "0x469e9a7f",
+      "coin": "BTC",
+      "side": "LONG",
+      "position_usd": 40196000,
+      "unrealized_pnl_usd": -531634.56254,
+      "leverage": 25
+    },
+    "largest_position_share_pct": 19.71015699402157,
+    "top_five_position_count": 5,
+    "top_five_positions_share_pct": 59.82707096492616,
+    "top_wallet_share_pct": 42.21323222053336,
+    "top_four_wallet_count": 4,
+    "top_four_wallets_share_pct": 81.66549564342122,
+    "positions": [
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "BTC",
+        "side": "LONG",
+        "position_usd": 40196000,
+        "unrealized_pnl_usd": -531634.56254,
+        "leverage": 25
+      },
+      {
+        "wallet_address": "0x519c721de735f7c9e6146d167852e60d60496a47",
+        "wallet_label": "0x519c721d",
+        "coin": "BTC",
+        "side": "SHORT",
+        "position_usd": 24117600,
+        "unrealized_pnl_usd": -215100,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+        "wallet_label": "0xa61c57d0",
+        "coin": "ETH",
+        "side": "SHORT",
+        "position_usd": 22585413.52744,
+        "unrealized_pnl_usd": -420947.89415,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0xf02d028ffeddc120a3ec59602a6617303ca55eb3",
+        "wallet_label": "0xf02d028f",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 22220600.87556,
+        "unrealized_pnl_usd": -3986773.806565,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "ETH",
+        "side": "LONG",
+        "position_usd": 12889000,
+        "unrealized_pnl_usd": -225984.36295,
+        "leverage": 25
+      },
+      {
+        "wallet_address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+        "wallet_label": "0xa61c57d0",
+        "coin": "ZEC",
+        "side": "SHORT",
+        "position_usd": 11478018.125,
+        "unrealized_pnl_usd": -660097.442,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 10906323.63544,
+        "unrealized_pnl_usd": -1320236.786038,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "SOL",
+        "side": "SHORT",
+        "position_usd": 10887000,
+        "unrealized_pnl_usd": 233949.6885,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "XRP",
+        "side": "SHORT",
+        "position_usd": 6891500,
+        "unrealized_pnl_usd": 246877.0847,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0xceec48581b3145a575508719f45da07dc57fa7ce",
+        "wallet_label": "0xceec4858",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 4544200,
+        "unrealized_pnl_usd": -413259.524057,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 4337722.45808,
+        "unrealized_pnl_usd": -263267.14909,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "wallet_label": "0x469e9a7f",
+        "coin": "ZEC",
+        "side": "SHORT",
+        "position_usd": 4317927.104,
+        "unrealized_pnl_usd": 152172.158,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "BTC",
+        "side": "LONG",
+        "position_usd": 3717259.764658,
+        "unrealized_pnl_usd": 449414.170217,
+        "leverage": 40
+      },
+      {
+        "wallet_address": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+        "wallet_label": "0x4c6d679e",
+        "coin": "XMR",
+        "side": "SHORT",
+        "position_usd": 3348220.3348,
+        "unrealized_pnl_usd": -65633.73954,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "wallet_label": "0xaf0fdd39",
+        "coin": "SOL",
+        "side": "SHORT",
+        "position_usd": 3266110.887,
+        "unrealized_pnl_usd": -44407.97167,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "XPL",
+        "side": "SHORT",
+        "position_usd": 2923582.864013,
+        "unrealized_pnl_usd": 73414.080608,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "wallet_label": "stuxfred",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 1426878.8,
+        "unrealized_pnl_usd": -6218.937676,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "NEAR",
+        "side": "SHORT",
+        "position_usd": 1389047.114,
+        "unrealized_pnl_usd": -74471.958399,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "AAVE",
+        "side": "SHORT",
+        "position_usd": 1254977.25,
+        "unrealized_pnl_usd": -53996.5034,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "LINK",
+        "side": "SHORT",
+        "position_usd": 1186795.5748,
+        "unrealized_pnl_usd": 202386.965245,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "XRP",
+        "side": "SHORT",
+        "position_usd": 959366.4,
+        "unrealized_pnl_usd": 80398.6156,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "wallet_label": "0xaf0fdd39",
+        "coin": "AERO",
+        "side": "SHORT",
+        "position_usd": 897073.180365,
+        "unrealized_pnl_usd": 13582.994038,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "wallet_label": "stuxfred",
+        "coin": "BTC",
+        "side": "LONG",
+        "position_usd": 860200.82,
+        "unrealized_pnl_usd": -5648.576752,
+        "leverage": 40
+      },
+      {
+        "wallet_address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "wallet_label": "0xaf0fdd39",
+        "coin": "UNI",
+        "side": "SHORT",
+        "position_usd": 835829.80498,
+        "unrealized_pnl_usd": -353803.09451,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "wallet_label": "stuxfred",
+        "coin": "SOL",
+        "side": "LONG",
+        "position_usd": 544350,
+        "unrealized_pnl_usd": -3477.2233,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "UNI",
+        "side": "SHORT",
+        "position_usd": 537153.8,
+        "unrealized_pnl_usd": 14039.7,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+        "wallet_label": "0x007d76ee",
+        "coin": "TRUMP",
+        "side": "SHORT",
+        "position_usd": 481358.702783,
+        "unrealized_pnl_usd": 343853.624251,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "wallet_label": "0xaf0fdd39",
+        "coin": "XPL",
+        "side": "LONG",
+        "position_usd": 454855,
+        "unrealized_pnl_usd": 4611.28677,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+        "wallet_label": "0x007d76ee",
+        "coin": "ADA",
+        "side": "SHORT",
+        "position_usd": 441500,
+        "unrealized_pnl_usd": -24456.20372,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "ZEC",
+        "side": "SHORT",
+        "position_usd": 425785.85,
+        "unrealized_pnl_usd": 5423.618,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "PENDLE",
+        "side": "SHORT",
+        "position_usd": 401263.685,
+        "unrealized_pnl_usd": 453773.8369,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "KPEPE",
+        "side": "SHORT",
+        "position_usd": 385903.5,
+        "unrealized_pnl_usd": 293907.249137,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "wallet_label": "stuxfred",
+        "coin": "ETHFI",
+        "side": "SHORT",
+        "position_usd": 383012.612052,
+        "unrealized_pnl_usd": -30411.560034,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "BTC",
+        "side": "SHORT",
+        "position_usd": 376555.32408,
+        "unrealized_pnl_usd": -81715.01091,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "ADA",
+        "side": "SHORT",
+        "position_usd": 239734.72075,
+        "unrealized_pnl_usd": 531123.644528,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "BNB",
+        "side": "SHORT",
+        "position_usd": 221132.73336,
+        "unrealized_pnl_usd": -49579.2855,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "STRK",
+        "side": "SHORT",
+        "position_usd": 200745,
+        "unrealized_pnl_usd": 412949.884498,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "CRV",
+        "side": "SHORT",
+        "position_usd": 146457.045996,
+        "unrealized_pnl_usd": -4870.91422,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "FIL",
+        "side": "SHORT",
+        "position_usd": 136636.5,
+        "unrealized_pnl_usd": 319402.522378,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "wallet_label": "0xaf0fdd39",
+        "coin": "HYPE",
+        "side": "LONG",
+        "position_usd": 121801.82796,
+        "unrealized_pnl_usd": 5844.751334,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "AVAX",
+        "side": "SHORT",
+        "position_usd": 115790.154897,
+        "unrealized_pnl_usd": 393474.155953,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "ETH",
+        "side": "LONG",
+        "position_usd": 96524.29643,
+        "unrealized_pnl_usd": 27456.017331,
+        "leverage": 25
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "SOL",
+        "side": "LONG",
+        "position_usd": 90107.3442,
+        "unrealized_pnl_usd": 23113.94871,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "GRASS",
+        "side": "SHORT",
+        "position_usd": 85706.479152,
+        "unrealized_pnl_usd": 598342.435258,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "LIT",
+        "side": "LONG",
+        "position_usd": 74091.0795,
+        "unrealized_pnl_usd": 5889.682484,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "ETH",
+        "side": "SHORT",
+        "position_usd": 73102.28352,
+        "unrealized_pnl_usd": -25563.82375,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "KSHIB",
+        "side": "SHORT",
+        "position_usd": 64596,
+        "unrealized_pnl_usd": 121460.179476,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+        "wallet_label": "0xa61c57d0",
+        "coin": "SOL",
+        "side": "SHORT",
+        "position_usd": 55523.7,
+        "unrealized_pnl_usd": -3751,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "SUI",
+        "side": "LONG",
+        "position_usd": 53929.590176,
+        "unrealized_pnl_usd": -14902.964404,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "wallet_label": "0x8af700ba",
+        "coin": "SUI",
+        "side": "SHORT",
+        "position_usd": 52513.391413,
+        "unrealized_pnl_usd": 95136.762339,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "wallet_label": "stuxfred",
+        "coin": "LIT",
+        "side": "LONG",
+        "position_usd": 46454,
+        "unrealized_pnl_usd": 647.6607,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "ASTER",
+        "side": "SHORT",
+        "position_usd": 42576.294288,
+        "unrealized_pnl_usd": -3106.649149,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 38465.68178,
+        "unrealized_pnl_usd": -3566.795121,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "TAO",
+        "side": "LONG",
+        "position_usd": 37222.8834,
+        "unrealized_pnl_usd": 1208.798,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "ZEC",
+        "side": "LONG",
+        "position_usd": 33477.82,
+        "unrealized_pnl_usd": 21725.501977,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "PUMP",
+        "side": "LONG",
+        "position_usd": 5399.078322,
+        "unrealized_pnl_usd": 2066.163251,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "STABLE",
+        "side": "SHORT",
+        "position_usd": 5156.877852,
+        "unrealized_pnl_usd": 2708.863502,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "ZEC",
+        "side": "LONG",
+        "position_usd": 4211.96,
+        "unrealized_pnl_usd": 3287.448133,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "UNI",
+        "side": "SHORT",
+        "position_usd": 3989.72674,
+        "unrealized_pnl_usd": -579.983058,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "USELESS",
+        "side": "SHORT",
+        "position_usd": 2431.64527,
+        "unrealized_pnl_usd": 512.581065,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "PURR",
+        "side": "LONG",
+        "position_usd": 2228.38161,
+        "unrealized_pnl_usd": 24.513652,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "SOL",
+        "side": "LONG",
+        "position_usd": 1978.1679,
+        "unrealized_pnl_usd": 629.514882,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "PAXG",
+        "side": "LONG",
+        "position_usd": 1914.6985,
+        "unrealized_pnl_usd": 127.2993,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "FARTCOIN",
+        "side": "LONG",
+        "position_usd": 1423.388538,
+        "unrealized_pnl_usd": 208.291787,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "NEAR",
+        "side": "LONG",
+        "position_usd": 1378.90332,
+        "unrealized_pnl_usd": 617.037977,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "MON",
+        "side": "LONG",
+        "position_usd": 1012.219832,
+        "unrealized_pnl_usd": 54.653976,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "ENA",
+        "side": "SHORT",
+        "position_usd": 946.85291,
+        "unrealized_pnl_usd": 57.35169,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "ZORA",
+        "side": "LONG",
+        "position_usd": 748.564128,
+        "unrealized_pnl_usd": 111.417045,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "HEMI",
+        "side": "LONG",
+        "position_usd": 663.03555,
+        "unrealized_pnl_usd": -9.21327,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "GRAM",
+        "side": "LONG",
+        "position_usd": 624.3965,
+        "unrealized_pnl_usd": 6.530629,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "MEGA",
+        "side": "LONG",
+        "position_usd": 594.39037,
+        "unrealized_pnl_usd": 31.252296,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "TIA",
+        "side": "LONG",
+        "position_usd": 566.4448,
+        "unrealized_pnl_usd": 66.332358,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "MELANIA",
+        "side": "SHORT",
+        "position_usd": 556.325575,
+        "unrealized_pnl_usd": 2033.609075,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "SAGA",
+        "side": "LONG",
+        "position_usd": 548.208486,
+        "unrealized_pnl_usd": 253.07746,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "TRUMP",
+        "side": "SHORT",
+        "position_usd": 540.57926,
+        "unrealized_pnl_usd": 1094.180635,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "ENA",
+        "side": "LONG",
+        "position_usd": 524.10503,
+        "unrealized_pnl_usd": 108.863513,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "PONS",
+        "side": "SHORT",
+        "position_usd": 447.78,
+        "unrealized_pnl_usd": 127.11834,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "BERA",
+        "side": "LONG",
+        "position_usd": 435.784575,
+        "unrealized_pnl_usd": -5019.907125,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "XRP",
+        "side": "SHORT",
+        "position_usd": 410.7334,
+        "unrealized_pnl_usd": -88.37341,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "CHIP",
+        "side": "LONG",
+        "position_usd": 403.634,
+        "unrealized_pnl_usd": 44.166939,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "TAO",
+        "side": "LONG",
+        "position_usd": 339.747,
+        "unrealized_pnl_usd": 21.649954,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "JUP",
+        "side": "LONG",
+        "position_usd": 310.04688,
+        "unrealized_pnl_usd": 16.875232,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "APT",
+        "side": "SHORT",
+        "position_usd": 273.096381,
+        "unrealized_pnl_usd": 1875.931743,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "wallet_label": "0x091159a8",
+        "coin": "ETH",
+        "side": "LONG",
+        "position_usd": 167.557,
+        "unrealized_pnl_usd": 5.058965,
+        "leverage": 20
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "SPX",
+        "side": "SHORT",
+        "position_usd": 98.1878,
+        "unrealized_pnl_usd": 126.12837,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "LAYER",
+        "side": "SHORT",
+        "position_usd": 65.04627,
+        "unrealized_pnl_usd": 112.6264,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "WLFI",
+        "side": "SHORT",
+        "position_usd": 48.10182,
+        "unrealized_pnl_usd": 119.905469,
+        "leverage": 5
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "MOVE",
+        "side": "SHORT",
+        "position_usd": 40.3811,
+        "unrealized_pnl_usd": 284.07338,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "DOGE",
+        "side": "SHORT",
+        "position_usd": 7.255855,
+        "unrealized_pnl_usd": 0.45186,
+        "leverage": 10
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "POPCAT",
+        "side": "SHORT",
+        "position_usd": 1.318707,
+        "unrealized_pnl_usd": 11.684649,
+        "leverage": 3
+      },
+      {
+        "wallet_address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "wallet_label": "0x856c3503",
+        "coin": "USUAL",
+        "side": "SHORT",
+        "position_usd": 0.944526,
+        "unrealized_pnl_usd": 17.212008,
+        "leverage": 3
+      }
+    ],
+    "coin_sides": [
+      {
+        "coin": "BTC",
+        "side": "LONG",
+        "position_usd": 44773460.584658,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 64.63837393169165,
+        "gross_share_pct": 21.954720302747685
+      },
+      {
+        "coin": "HYPE",
+        "side": "SHORT",
+        "position_usd": 43474191.45085999,
+        "position_count": 6,
+        "wallet_count": 6,
+        "dominance_pct": 99.72061233430097,
+        "gross_share_pct": 21.317622118733233
+      },
+      {
+        "coin": "BTC",
+        "side": "SHORT",
+        "position_usd": 24494155.32408,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 35.36162606830836,
+        "gross_share_pct": 12.010738552929798
+      },
+      {
+        "coin": "ETH",
+        "side": "SHORT",
+        "position_usd": 22658515.81096,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 63.568577605378415,
+        "gross_share_pct": 11.110630507651049
+      },
+      {
+        "coin": "ZEC",
+        "side": "SHORT",
+        "position_usd": 16221731.079,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 99.76819727881552,
+        "gross_share_pct": 7.9543453647599005
+      },
+      {
+        "coin": "SOL",
+        "side": "SHORT",
+        "position_usd": 14208634.587,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 95.71281571692555,
+        "gross_share_pct": 6.967221076237806
+      },
+      {
+        "coin": "ETH",
+        "side": "LONG",
+        "position_usd": 12985691.85343,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 36.431422394621585,
+        "gross_share_pct": 6.3675496344684115
+      },
+      {
+        "coin": "XRP",
+        "side": "SHORT",
+        "position_usd": 7851277.133400001,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 100,
+        "gross_share_pct": 3.8498831949170484
+      },
+      {
+        "coin": "XMR",
+        "side": "SHORT",
+        "position_usd": 3348220.3348,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 1.641803872262998
+      },
+      {
+        "coin": "XPL",
+        "side": "SHORT",
+        "position_usd": 2923582.864013,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 86.53652906140145,
+        "gross_share_pct": 1.433582377219809
+      },
+      {
+        "coin": "NEAR",
+        "side": "SHORT",
+        "position_usd": 1389047.114,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 99.90082871703898,
+        "gross_share_pct": 0.68112092469481
+      },
+      {
+        "coin": "UNI",
+        "side": "SHORT",
+        "position_usd": 1376973.3317200001,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.6752005310175676
+      },
+      {
+        "coin": "AAVE",
+        "side": "SHORT",
+        "position_usd": 1254977.25,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.6153796054688392
+      },
+      {
+        "coin": "LINK",
+        "side": "SHORT",
+        "position_usd": 1186795.5748,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.581946638947111
+      },
+      {
+        "coin": "AERO",
+        "side": "SHORT",
+        "position_usd": 897073.180365,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.4398809140242905
+      },
+      {
+        "coin": "ADA",
+        "side": "SHORT",
+        "position_usd": 681234.72075,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.3340442654931074
+      },
+      {
+        "coin": "SOL",
+        "side": "LONG",
+        "position_usd": 636435.5121,
+        "position_count": 3,
+        "wallet_count": 3,
+        "dominance_pct": 4.287184283074452,
+        "gross_share_pct": 0.31207691959551986
+      },
+      {
+        "coin": "TRUMP",
+        "side": "SHORT",
+        "position_usd": 481899.28204300004,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.23629989313299363
+      },
+      {
+        "coin": "XPL",
+        "side": "LONG",
+        "position_usd": 454855,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 13.463470938598554,
+        "gross_share_pct": 0.22303869687321332
+      },
+      {
+        "coin": "PENDLE",
+        "side": "SHORT",
+        "position_usd": 401263.685,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.19676013104163648
+      },
+      {
+        "coin": "KPEPE",
+        "side": "SHORT",
+        "position_usd": 385903.5,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.18922824583397363
+      },
+      {
+        "coin": "ETHFI",
+        "side": "SHORT",
+        "position_usd": 383012.612052,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.18781069544818388
+      },
+      {
+        "coin": "BNB",
+        "side": "SHORT",
+        "position_usd": 221132.73336,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.10843270203609096
+      },
+      {
+        "coin": "STRK",
+        "side": "SHORT",
+        "position_usd": 200745,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.09843555243717933
+      },
+      {
+        "coin": "CRV",
+        "side": "SHORT",
+        "position_usd": 146457.045996,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.07181538883127174
+      },
+      {
+        "coin": "FIL",
+        "side": "SHORT",
+        "position_usd": 136636.5,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.06699987227867521
+      },
+      {
+        "coin": "HYPE",
+        "side": "LONG",
+        "position_usd": 121801.82796,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 0.2793876656990273,
+        "gross_share_pct": 0.059725672983640316
+      },
+      {
+        "coin": "LIT",
+        "side": "LONG",
+        "position_usd": 120545.0795,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.059109424863215534
+      },
+      {
+        "coin": "AVAX",
+        "side": "SHORT",
+        "position_usd": 115790.154897,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0567778418594374
+      },
+      {
+        "coin": "GRASS",
+        "side": "SHORT",
+        "position_usd": 85706.479152,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.04202627523859978
+      },
+      {
+        "coin": "KSHIB",
+        "side": "SHORT",
+        "position_usd": 64596,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.031674726370430326
+      },
+      {
+        "coin": "SUI",
+        "side": "LONG",
+        "position_usd": 53929.590176,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 50.665238206342366,
+        "gross_share_pct": 0.026444439471395253
+      },
+      {
+        "coin": "SUI",
+        "side": "SHORT",
+        "position_usd": 52513.391413,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 49.33476179365763,
+        "gross_share_pct": 0.025750004702924028
+      },
+      {
+        "coin": "ASTER",
+        "side": "SHORT",
+        "position_usd": 42576.294288,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.020877337163900486
+      },
+      {
+        "coin": "ZEC",
+        "side": "LONG",
+        "position_usd": 37689.78,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 0.23180272118448644,
+        "gross_share_pct": 0.01848122899965505
+      },
+      {
+        "coin": "TAO",
+        "side": "LONG",
+        "position_usd": 37562.6304,
+        "position_count": 2,
+        "wallet_count": 2,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.01841888104021314
+      },
+      {
+        "coin": "PUMP",
+        "side": "LONG",
+        "position_usd": 5399.078322,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.002647444555419409
+      },
+      {
+        "coin": "STABLE",
+        "side": "SHORT",
+        "position_usd": 5156.877852,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0025286812633573672
+      },
+      {
+        "coin": "USELESS",
+        "side": "SHORT",
+        "position_usd": 2431.64527,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0011923601857266885
+      },
+      {
+        "coin": "PURR",
+        "side": "LONG",
+        "position_usd": 2228.38161,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0010926896053261655
+      },
+      {
+        "coin": "PAXG",
+        "side": "LONG",
+        "position_usd": 1914.6985,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0009388747146785156
+      },
+      {
+        "coin": "FARTCOIN",
+        "side": "LONG",
+        "position_usd": 1423.388538,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0006979602832986077
+      },
+      {
+        "coin": "NEAR",
+        "side": "LONG",
+        "position_usd": 1378.90332,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 0.0991712829610158,
+        "gross_share_pct": 0.0006761469030942772
+      },
+      {
+        "coin": "MON",
+        "side": "LONG",
+        "position_usd": 1012.219832,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0004963432132844596
+      },
+      {
+        "coin": "ENA",
+        "side": "SHORT",
+        "position_usd": 946.85291,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 64.36981535991436,
+        "gross_share_pct": 0.00046429046438317684
+      },
+      {
+        "coin": "ZORA",
+        "side": "LONG",
+        "position_usd": 748.564128,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0003670593213994641
+      },
+      {
+        "coin": "HEMI",
+        "side": "LONG",
+        "position_usd": 663.03555,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0003251202802049318
+      },
+      {
+        "coin": "GRAM",
+        "side": "LONG",
+        "position_usd": 624.3965,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.000306173575517902
+      },
+      {
+        "coin": "MEGA",
+        "side": "LONG",
+        "position_usd": 594.39037,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00029146003354648645
+      },
+      {
+        "coin": "TIA",
+        "side": "LONG",
+        "position_usd": 566.4448,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0002777568896518845
+      },
+      {
+        "coin": "MELANIA",
+        "side": "SHORT",
+        "position_usd": 556.325575,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00027279491549008167
+      },
+      {
+        "coin": "SAGA",
+        "side": "LONG",
+        "position_usd": 548.208486,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0002688146911263528
+      },
+      {
+        "coin": "ENA",
+        "side": "LONG",
+        "position_usd": 524.10503,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 35.63018464008563,
+        "gross_share_pct": 0.0002569955324573686
+      },
+      {
+        "coin": "PONS",
+        "side": "SHORT",
+        "position_usd": 447.78,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0002195694621052587
+      },
+      {
+        "coin": "BERA",
+        "side": "LONG",
+        "position_usd": 435.784575,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00021368749101460265
+      },
+      {
+        "coin": "CHIP",
+        "side": "LONG",
+        "position_usd": 403.634,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00019792241785563001
+      },
+      {
+        "coin": "JUP",
+        "side": "LONG",
+        "position_usd": 310.04688,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00015203186088930657
+      },
+      {
+        "coin": "APT",
+        "side": "SHORT",
+        "position_usd": 273.096381,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.00013391313921805976
+      },
+      {
+        "coin": "SPX",
+        "side": "SHORT",
+        "position_usd": 98.1878,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.000048146505943317524
+      },
+      {
+        "coin": "LAYER",
+        "side": "SHORT",
+        "position_usd": 65.04627,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.000031895516807033426
+      },
+      {
+        "coin": "WLFI",
+        "side": "SHORT",
+        "position_usd": 48.10182,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.000023586785349242877
+      },
+      {
+        "coin": "MOVE",
+        "side": "SHORT",
+        "position_usd": 40.3811,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.000019800921001872935
+      },
+      {
+        "coin": "DOGE",
+        "side": "SHORT",
+        "position_usd": 7.255855,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 0.0000035579172349451786
+      },
+      {
+        "coin": "POPCAT",
+        "side": "SHORT",
+        "position_usd": 1.318707,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 6.466295651088469e-7
+      },
+      {
+        "coin": "USUAL",
+        "side": "SHORT",
+        "position_usd": 0.944526,
+        "position_count": 1,
+        "wallet_count": 1,
+        "dominance_pct": 100,
+        "gross_share_pct": 4.6314946126319084e-7
+      }
+    ],
+    "wallets": [
+      {
+        "address": "0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5",
+        "label": "0x469e9a7f",
+        "exposure_usd": 86087750.73944,
+        "position_count": 6,
+        "share_pct": 42.21323222053336,
+        "position_count_share_pct": 6.593406593406594
+      },
+      {
+        "address": "0xa61c57d0d1a83c02542092b431999b9870dd66b9",
+        "label": "0xa61c57d0",
+        "exposure_usd": 34118955.35244,
+        "position_count": 3,
+        "share_pct": 16.73027083462546,
+        "position_count_share_pct": 3.296703296703297
+      },
+      {
+        "address": "0x519c721de735f7c9e6146d167852e60d60496a47",
+        "label": "0x519c721d",
+        "exposure_usd": 24117600,
+        "position_count": 1,
+        "share_pct": 11.826094196412944,
+        "position_count_share_pct": 1.098901098901099
+      },
+      {
+        "address": "0xf02d028ffeddc120a3ec59602a6617303ca55eb3",
+        "label": "0xf02d028f",
+        "exposure_usd": 22220600.87556,
+        "position_count": 1,
+        "share_pct": 10.895898391849459,
+        "position_count_share_pct": 1.098901098901099
+      },
+      {
+        "address": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+        "label": "0x8af700ba",
+        "exposure_usd": 15733978.985176003,
+        "position_count": 19,
+        "share_pct": 7.715175538323595,
+        "position_count_share_pct": 20.87912087912088
+      },
+      {
+        "address": "0xaf0fdd39e5d92499b0ed9f68693da99c0ec1e92e",
+        "label": "0xaf0fdd39",
+        "exposure_usd": 5575670.700305,
+        "position_count": 5,
+        "share_pct": 2.7340368407298676,
+        "position_count_share_pct": 5.4945054945054945
+      },
+      {
+        "address": "0xceec48581b3145a575508719f45da07dc57fa7ce",
+        "label": "0xceec4858",
+        "exposure_usd": 4544200,
+        "position_count": 1,
+        "share_pct": 2.2282539409949456,
+        "position_count_share_pct": 1.098901098901099
+      },
+      {
+        "address": "0x856c35038594767646266bc7fd68dc26480e910d",
+        "label": "0x856c3503",
+        "exposure_usd": 3980395.398596,
+        "position_count": 28,
+        "share_pct": 1.9517916759032798,
+        "position_count_share_pct": 30.76923076923077
+      },
+      {
+        "address": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+        "label": "0x4c6d679e",
+        "exposure_usd": 3348220.3348,
+        "position_count": 1,
+        "share_pct": 1.641803872262998,
+        "position_count_share_pct": 1.098901098901099
+      },
+      {
+        "address": "0x69906b0ed626ca01a4b7c001e5711e5714ccf207",
+        "label": "stuxfred",
+        "exposure_usd": 3260896.2320520002,
+        "position_count": 5,
+        "share_pct": 1.59898439334656,
+        "position_count_share_pct": 5.4945054945054945
+      },
+      {
+        "address": "0x007d76eec0ba411ce873a8819df50dd443d967a0",
+        "label": "0x007d76ee",
+        "exposure_usd": 922858.702783,
+        "position_count": 2,
+        "share_pct": 0.45252487598646685,
+        "position_count_share_pct": 2.197802197802198
+      },
+      {
+        "address": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+        "label": "0x091159a8",
+        "exposure_usd": 24336.065527999996,
+        "position_count": 19,
+        "share_pct": 0.01193321903108957,
+        "position_count_share_pct": 20.87912087912088
+      }
+    ]
+  }
+}
