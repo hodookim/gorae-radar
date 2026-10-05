@@ -127,6 +127,60 @@ body {
   outline: none;
 }
 
+.terminal-promo {
+  max-width: var(--landing-max);
+  margin: 20px auto 0;
+  padding: 18px 22px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #635034;
+  border-radius: 12px;
+  background: #19160f;
+}
+.terminal-promo > img { border-radius: 10px; }
+.terminal-promo__copy { min-width: 0; }
+.terminal-promo__copy > span { color: #d2bd89; font-size: 11px; }
+.terminal-promo__copy > strong {
+  display: block;
+  margin-top: 5px;
+  color: #f5e8cb;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+.terminal-promo__copy > p {
+  margin: 5px 0 0;
+  color: #cfc7b5;
+  font-size: 12px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+.terminal-promo > a {
+  min-height: 44px;
+  padding: 10px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #e5bb70;
+  color: #201708;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.terminal-promo > a:hover { background: #f2cb87; }
+.terminal-promo > a:focus-visible { outline: 3px solid #f5e8cb; outline-offset: 4px; }
+@media (max-width: 760px) {
+  .terminal-promo { grid-template-columns: 38px minmax(0, 1fr); gap: 12px; padding: 16px; }
+  .terminal-promo > img { width: 38px; height: 38px; }
+  .terminal-promo__copy > strong { font-size: 17px; }
+  .terminal-promo > a { grid-column: 1 / -1; }
+}
+
 /* Home */
 
 .terminal-home {
@@ -135,8 +189,8 @@ body {
 }
 
 .investor-hero {
-  min-height: 490px;
-  padding: 54px 4px 48px;
+  min-height: 380px;
+  padding: 34px 4px;
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(480px, 1.08fr);
   align-items: center;
@@ -163,8 +217,8 @@ body {
   max-width: 650px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(38px, 4.2vw, 58px);
-  font-weight: 820;
+  font-size: clamp(32px, 3.3vw, 46px);
+  font-weight: 700;
   letter-spacing: -.058em;
   line-height: 1.08;
   word-break: keep-all;
@@ -419,7 +473,7 @@ body {
 }
 
 .pulse-error {
-  min-height: 300px;
+  min-height: 180px;
   display: grid;
   place-content: center;
   gap: 8px;

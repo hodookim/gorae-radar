@@ -155,6 +155,9 @@ function renderHeroPulse(radar, market, fear) {
     `;
   }
   const summary = summarizeRadar(radar);
+  if (!summary.totalUsd) {
+    return '<div class="pulse-error" role="status"><strong>관측 표본에 열린 포지션이 없습니다.</strong><p>현재 표본만으로 롱·숏 우위를 판단할 수 없습니다.</p><a class="text-link" href="/live">라이브 레이더</a></div>';
+  }
   const picks = normalizedPicks(radar);
   const lead = picks[0] || null;
   const bias = summary.netUsd >= 0 ? sideMeta("LONG") : sideMeta("SHORT");
@@ -240,6 +243,7 @@ function signalSummary(pick) {
 }
 
 function renderSignalRows(radar) {
+  if (!radar) return '<div class="terminal-empty" role="status"><strong>포지션 데이터를 불러오지 못했습니다.</strong><a href="/live">라이브 레이더에서 다시 확인</a></div>';
   const picks = normalizedPicks(radar);
   if (!picks.length) {
     return `
@@ -299,6 +303,7 @@ function renderWalletPosition(position) {
 }
 
 function renderWalletRows(radar) {
+  if (!radar) return '<div class="terminal-empty" role="status"><strong>지갑 데이터를 불러오지 못했습니다.</strong><a href="/live">라이브 레이더에서 다시 확인</a></div>';
   const wallets = (radar?.wallets || [])
     .filter((row) => /^0x[a-f0-9]{40}$/i.test(String(row?.candidate?.address || "")))
     .slice(0, 6);
@@ -354,8 +359,8 @@ function renderStaticShell() {
       <section class="investor-hero" aria-labelledby="investor-hero-title">
         <div class="investor-hero__intro">
           <span class="hero-kicker">Hyperliquid Wallet Intelligence</span>
-          <h1 id="investor-hero-title">상위 지갑의 움직임을<br><span>포지션으로 추적합니다</span></h1>
-          <p>내부자 의심 후보를 포함한 공개 지갑의 방향, 손익과 레버리지를 비교합니다.</p>
+          <h1 id="investor-hero-title">고래는 지금<br><span>어디에 포지션을 잡았을까?</span></h1>
+          <p>Hyperliquid 상위 공개 지갑의 롱·숏 방향, 노출 규모와 손익을 비교하세요. 관측 시각과 표본 범위를 함께 확인할 수 있습니다.</p>
           <div class="investor-hero__actions">
             <a class="primary" href="/live">라이브 레이더</a>
             <a class="text-link" id="landing-chart-cta" href="/markets/BTC">BTC 시장 차트</a>

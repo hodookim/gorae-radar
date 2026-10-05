@@ -17,8 +17,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicon-16.png">
   <link rel="apple-touch-icon" sizes="192x192" href="/static/assets/favicon-192.png">
-  <link rel="modulepreload" href="/static/js/main.js?v=32">
-  <link rel="modulepreload" href="/static/js/views/landing.js?v=32">
+  <link rel="modulepreload" href="/static/js/main.js?v=33">
+  <link rel="modulepreload" href="/static/js/views/landing.js?v=33">
 
   <!-- Open Graph / Twitter social share -->
   <meta property="og:title" content="고래지갑추적기 | 고래 포지션 실시간 분석">
@@ -35,7 +35,7 @@
 
   <link rel="stylesheet" href="/static/css/system-v2.css?v=4">
   <link rel="stylesheet" href="/static/css/product-v2.css?v=11">
-  <link rel="stylesheet" href="/static/css/investor-remaster.css?v=2">
+  <link rel="stylesheet" href="/static/css/investor-remaster.css?v=3">
 </head>
 <body>
   <div class="sr-only" id="route-announcer" aria-live="polite" aria-atomic="true"></div>
@@ -56,13 +56,19 @@
       </nav>
     </header>
 
+    <aside class="terminal-promo" aria-label="운영자의 자동매매 프로그램 안내">
+      <img src="/static/assets/itsai-logo.png" alt="" width="48" height="48">
+      <div class="terminal-promo__copy"><span>운영자 프로젝트 · Windows 프로그램</span><strong>한 종목에 매달리지 않는 AI 자동매매</strong><p>잇츠에이아이 터미널 · 추천 가입 시 무료 제공 · 전략 엔진 지속 업데이트</p></div>
+      <a href="https://itsai-terminal.vercel.app/?utm_source=gorae_radar&amp;utm_medium=referral&amp;utm_campaign=terminal_intro" target="_blank" rel="noopener noreferrer">무료 프로그램 보기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
+    </aside>
+
     <main id="app" class="app-loading">
       <section class="terminal-home landing-prerender" aria-label="고래지갑추적기 시장 브리핑">
         <section class="investor-hero" aria-labelledby="prerender-hero-title">
           <div class="investor-hero__intro">
             <span class="hero-kicker">Hyperliquid Wallet Intelligence</span>
-            <h1 id="prerender-hero-title">상위 지갑의 움직임을<br><span>포지션으로 추적합니다</span></h1>
-            <p>내부자 의심 후보를 포함한 공개 지갑의 방향, 손익과 레버리지를 비교합니다.</p>
+            <h1 id="prerender-hero-title">고래는 지금<br><span>어디에 포지션을 잡았을까?</span></h1>
+            <p>Hyperliquid 상위 공개 지갑의 롱·숏 방향, 노출 규모와 손익을 비교하세요. 관측 시각과 표본 범위를 함께 확인할 수 있습니다.</p>
             <div class="investor-hero__actions">
               <a class="primary" href="/live">라이브 레이더</a>
               <a class="text-link" href="/markets/BTC">BTC 시장 차트</a>
@@ -281,6 +287,6 @@
   }
   </script>
 
-  <script type="module" src="/static/js/main.js?v=32"></script>
+  <script type="module" src="/static/js/main.js?v=33"></script>
 </body>
 </html>

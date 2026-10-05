@@ -4,7 +4,7 @@
 // swap (previous → unmount → empty #app → next → mount) plus the global error
 // handler. Per-view event binding lives inside each view's mount().
 import { initRouter } from "./router.js?v=23";
-import * as landing from "./views/landing.js?v=32";
+import * as landing from "./views/landing.js?v=33";
 
 const viewLoaders = {
   landing: () => landing,
